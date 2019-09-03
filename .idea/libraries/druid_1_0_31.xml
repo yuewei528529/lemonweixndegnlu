@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="druid-1.0.31">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.31/druid-1.0.31.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-rest/5.22.0/activiti-rest-5.22.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-bpmn-model/5.18.0/activiti-bpmn-model-5.18.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-modeler/5.22.0/activiti-modeler-5.22.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
