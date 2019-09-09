@@ -2,6 +2,35 @@
   <library name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.3">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.6.3/jackson-core-2.6.3.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/barcode.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/batik.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/dm_report.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/ess_es_server.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/ess_japi.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/excel2007.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/geronimo-stax-api_1.0_spec-1.0.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/icu4j_3_4_5.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/itext2_rq.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/jai_codec.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/jai_core.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/jdom.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/js.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/numformat.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/ooxml-schemas-1.0.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/parser.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/pdfbox_073.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/poi-3.6-20091214.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/poi-ooxml-3.6-20091214.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/poi2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/qrcode.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/Qrcode_swetake.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/report4.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/xerces_2_5_0.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/xml-apis-ext.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/xml-apis.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/xmlbeans-2.3.0.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/qq-master/qq-master/src/main/webapp/WEB-INF/lib/log4j_128.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.6.3/jackson-core-2.6.3-javadoc.jar!/" />

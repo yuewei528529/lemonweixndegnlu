@@ -1,0 +1,42 @@
+.olapTitle {
+	FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; CURSOR: default; COLOR: #EAECF6; PADDING-TOP: 5px;  
+}
+.olapDimsTitle {
+	 VERTICAL-ALIGN: middle; CURSOR: default; COLOR: black;  BACKGROUND-COLOR: #c9c9c9;
+}
+.olapDimsList {
+	 VERTICAL-ALIGN: middle; CURSOR: default; COLOR: #EAECF6; FONT-FAMILY: ËÎÌו
+}
+.olapGraphTitle {
+	  VERTICAL-ALIGN: middle; CURSOR: default; COLOR: black;  BACKGROUND-COLOR: #c9c9c9;}
+.olapGraphList {
+	 VERTICAL-ALIGN: middle; CURSOR: default; COLOR: #EAECF6; 
+	text-decoration:underline
+}
+.olapExpExcel {
+	 VERTICAL-ALIGN: middle; CURSOR: default; COLOR: #EAECF6; 
+	text-decoration:underline
+}
+.olapGraphList:hover{color:#FF0000}
+
+.olapCorner {
+	BORDER-RIGHT: #dcdcdc 1px solid;font-size:12px; BORDER-TOP: #B0CCE2 1px solid; FONT-WEIGHT: bold;  VERTICAL-ALIGN: middle; BORDER-LEFT: #B0CCE2 1px solid; CURSOR: default;  BORDER-BOTTOM: #dcdcdc 1px solid;  BACKGROUND-COLOR: #EAECF6
+}
+.olapColHeader {
+	BORDER-RIGHT: #B0CCE2 1px solid; BORDER-TOP: #B0CCE2 1px solid;   VERTICAL-ALIGN: middle; BORDER-LEFT: #B0CCE2 1px solid; CURSOR: default; BORDER-BOTTOM: #B0CCE2 1px solid;  BACKGROUND-COLOR: #EAECF6; 
+}
+.olapRowHeader {
+	BORDER-RIGHT: #B0CCE2 1px solid; BORDER-TOP: #B0CCE2 1px solid;   VERTICAL-ALIGN: middle; BORDER-LEFT: #B0CCE2 1px solid; CURSOR: default; BORDER-BOTTOM: #B0CCE2 1px solid;  BACKGROUND-COLOR: #F1F5FA; 
+}
+.oc1 {
+	BORDER-RIGHT: #B0CCE2 1px solid; BORDER-TOP: #B0CCE2 1px solid;  VERTICAL-ALIGN: middle; BORDER-LEFT: #B0CCE2 1px solid; CURSOR: default; BORDER-BOTTOM: #B0CCE2 1px solid;  BACKGROUND-COLOR: #f8f8f8; 
+}
+.oc2 {
+	BORDER-RIGHT: #B0CCE2 1px solid; BORDER-TOP: #B0CCE2 1px solid;  VERTICAL-ALIGN: middle; BORDER-LEFT: #B0CCE2 1px solid; CURSOR: default; BORDER-BOTTOM: #B0CCE2 1px solid;  BACKGROUND-COLOR: #F8FEFF; 
+}
+.olapDragTip {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: black 1px solid; PADDING-LEFT: 10px;  PADDING-BOTTOM: 5px; BORDER-LEFT: black 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: black 1px solid;  BACKGROUND-COLOR: lightblue
+}
+.olapPopupMenu {
+	BORDER-RIGHT: #696969 2px solid; PADDING-RIGHT: 4px; BORDER-TOP: #f8f8f8 2px solid; PADDING-LEFT: 4px;  PADDING-BOTTOM: 4px; BORDER-LEFT: #f8f8f8 2px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #696969 2px solid;  BACKGROUND-COLOR: lightgrey
+}

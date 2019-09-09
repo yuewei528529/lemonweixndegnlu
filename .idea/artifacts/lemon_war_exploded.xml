@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="lemon:war exploded">
-    <output-path>$PROJECT_DIR$/target/lemon-1.10.0</output-path>
+    <output-path>$PROJECT_DIR$/target/pinggao-1.0</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -107,7 +107,6 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.8.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-          <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.12" />
           <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.4.01" />
           <element id="library" level="project" name="Maven: xerces:xercesImpl:2.10.0" />
           <element id="library" level="project" name="Maven: xml-resolver:xml-resolver:1.2" />
@@ -132,7 +131,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/lemon-1.10.0/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/pinggao-1.0/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="lemon/web/Web" />
     </root>

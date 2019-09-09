@@ -1,8 +1,9 @@
 <%@tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
 <%@tag import="org.springframework.context.ApplicationContext"%>
 <%@tag import="org.springframework.web.context.support.WebApplicationContextUtils"%>
-<%@tag import="org.activiti.engine.ProcessEngine"%>
-<%@attribute name="processDefinitionId" type="java.lang.String" required="true"%>
+<%@tag import="org.activiti.engine.*"%>
+<%@ tag import="org.activiti.engine.ProcessEngine" %>
+<%@ attribute name="processDefinitionId" type="java.lang.String" required="true"%>
 <%
   String processDefinitionId = (String) jspContext.getAttribute("processDefinitionId");
   ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(application);

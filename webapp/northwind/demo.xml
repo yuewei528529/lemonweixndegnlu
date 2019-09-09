@@ -1,0 +1,66 @@
+<Server port="6005" shutdown="SHUTDOWN" debug="0">
+<Listener className="org.apache.catalina.mbeans.ServerLifecycleListener" debug="0"/>
+<Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" debug="0"/>
+<GlobalNamingResources>
+	<Environment name="simpleValue" type="java.lang.Integer" value="30"/>
+	<Resource name="UserDatabase" auth="Container"
+		type="org.apache.catalina.UserDatabase"
+		description="User database that can be updated and saved">
+	</Resource>
+	<ResourceParams name="UserDatabase">
+		<parameter>
+		<name>factory</name>
+		<value>org.apache.catalina.users.MemoryUserDatabaseFactory</value>
+		</parameter>
+		<parameter>
+		<name>pathname</name>
+		<value>conf/tomcat-users.xml</value>
+		</parameter>
+	</ResourceParams>
+</GlobalNamingResources>
+
+<Service name="Catalina">
+	<Connector port="6001" maxThreads="150" minSpareThreads="25" maxSpareThreads="75"
+		enableLookups="false" redirectPort="6003" acceptCount="100"
+		debug="0" connectionTimeout="20000" 	disableUploadTimeout="true" URIEncoding="gbk"/>
+	<Engine name="Catalina" defaultHost="localhost">
+	<Logger className="org.apache.catalina.logger.FileLogger"	prefix="catalina_log." suffix=".txt" timestamp="true"/>
+
+	<Realm className="org.apache.catalina.realm.UserDatabaseRealm" debug="0" resourceName="UserDatabase"/>
+	<Host name="localhost" debug="0" appBase="webapps"
+	unpackWARs="true" autoDeploy="true"
+	xmlValidation="false" xmlNamespaceAware="false">
+	<Logger className="org.apache.catalina.logger.FileLogger"
+	 directory="logs"  prefix="runqian." suffix=".txt"
+	timestamp="true"/>
+		<Context path="/demo" reloadable="true" docBase="${catalina.home}\demo">
+			<!--
+			<Resource name="report" auth="Container" type="javax.sql.DataSource" />
+					<ResourceParams name="report">
+						<parameter>  
+							<name>factory</name>  
+							<value>org.apache.commons.dbcp.BasicDataSourceFactory</value>  
+						</parameter>  
+						<parameter>
+							<name>username</name>
+							<value>sa</value>
+						</parameter>
+						<parameter>
+							<name>password</name>
+							<value>lgl</value>
+						</parameter>
+						<parameter>
+							<name>driverClassName</name>
+							<value>com.newatlanta.jturbo.driver.Driver</value>
+						</parameter>
+						<parameter>
+							<name>url</name>
+							<value>jdbc:JTurbo://localhost/report/charset=GBK</value>
+						</parameter>
+					</ResourceParams>
+					-->
+		</Context>
+	</Host>
+	</Engine>
+</Service>
+</Server>

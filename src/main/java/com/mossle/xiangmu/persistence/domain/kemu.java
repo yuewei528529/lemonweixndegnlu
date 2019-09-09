@@ -17,6 +17,8 @@ public class kemu implements java.io.Serializable {
     private String gys;
     private String hwmc;
     private String htze;
+    private String yif;
+    private String fkbl;
     @Id
     @Column(name = "id", unique = true, nullable = false)
     public String getId() {
@@ -96,5 +98,32 @@ public class kemu implements java.io.Serializable {
      */
     public void sethtze(String htze) {
         this.htze = htze;
+    }
+
+
+    @Column(name = "yif", length = 200)
+    public String getyif() {
+        return this.yif;
+    }
+
+    /**
+     * @param
+     *
+     */
+    public void setyif(String yif) {
+        this.yif = yif;
+    }
+
+    @Column(name = "fkbl", length = 200)
+    public String getfkbl() {
+        return this.fkbl;
+    }
+
+    /**
+     * @param
+     *
+     */
+    public void setfkbl(String fkbl) {
+        this.fkbl = fkbl;
     }
 }

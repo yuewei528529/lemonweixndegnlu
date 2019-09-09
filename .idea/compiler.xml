@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="9">
       <module name="lemon" target="1.8" />
+      <module name="SSMRedisDemo" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

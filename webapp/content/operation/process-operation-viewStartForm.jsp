@@ -157,6 +157,8 @@
             type: "get",
             success: function (data) {
                 $("input[name='hetongje']").attr("readonly","readonly");
+                $("input[name='yifu']").attr("readonly","readonly");
+                $("input[name='yifubl']").attr("readonly","readonly");
                 /*                document.getElementsByName("initiator")[0].onchange = function (e) {
                                     for($("select[name='xmjl']").val() == data[i].xmjc) {
 
@@ -192,6 +194,13 @@
             }
         });
         $(function () {
+            var nameOpt = "<option value='' selected='selected'>--请选择--</option>";
+            nameOpt += "<option value='" + "紧急"+ "' >" + "紧急" + "</option>";
+            nameOpt += "<option value='" + "一般"+ "' >" + "一般" + "</option>";
+
+            $("select[name='jinji']").html(nameOpt);
+
+
             document.getElementsByName("xmjl")[0].onchange = function (e) {
                 $.ajax({
                     url: "http://localhost:8083/lemon_war_exploded/zijin/gys",
@@ -221,22 +230,38 @@
                     success: function (data) {
 
                         var nameOpt=0;
+                        var nameOpt1=0;
                         for (var i = 0; i < data.length; i++) {
                             if (isNaN(parseFloat(data[i].htze))) {
                                 data[i].htze = 0;
                             }
+                            if (isNaN(parseFloat(data[i].yif))) {
+                                data[i].yif = 0;
+                            }
 
                             nameOpt += parseFloat(data[i].htze);
+                            nameOpt1 += parseFloat(data[i].yif);
 
                         }
                         $("input[name='hetongje']").val(nameOpt);
+                        $("input[name='yifu']").val(nameOpt1);
+                        $("input[name='yifubl']").val(nameOpt1/nameOpt*100+"%");
+
                     },
                     error: function () {
                     }
                 });
 
             };
+            document.getElementsByName("shenqje")[0].onchange = function (e) {
+                $("input[name='shenqbl']").val($("input[name='shenqje']").val()/$("input[name='hetongje']").val()*100+"%");
 
+            }
+            document.getElementsByName("shenqbl")[0].onchange = function (e) {
+
+                $("input[name='shenqje']").val(parseFloat($("input[name='shenqbl']").val())*$("input[name='hetongje']").val()/100);
+
+            }
 
         });
 

@@ -1,0 +1,102 @@
+<div style='padding:0;'>
+	<table cellspacing=7 border=0 style='border:0px solid red;width:100%'>
+		<tr><td style='border:0px'><select id=fontList onchange="$$( 'sampleText' ).style.fontFamily=value;" style="width:125px">
+			<option value="宋体">宋体</option>
+			<option value="黑体">黑体</option>
+			<option value="楷体_GB2312">楷体_GB2312</option>
+			<option value="仿宋_GB2312">仿宋_GB2312</option>
+			<option value="隶书">隶书</option>
+			<option value="幼圆">幼圆</option>
+			<option value="新宋体">新宋体</option>
+			<option value="华文楷体">华文楷体</option>
+			<option value="华文行楷">华文行楷</option>
+			<option value="Arial">Arial</option>
+			<option value="Dialog">Dialog</option>
+			<option value="System">System</option>
+			<option value="Times New Roman">Times New Roman</option>
+		</select></td><td style='border:0px'><select id=fontSizeList onchange="$$( 'sampleText' ).style.fontSize=value;" style="width:70px">
+			<option value="8px">六号</option>
+			<option value="9px">小五</option>
+			<option value="11px">五号</option>
+			<option value="12px">小四</option>
+			<option value="14px">四号</option>
+			<option value="15px">小三</option>
+			<option value="16px">三号</option>
+			<option value="18px">小二</option>
+			<option value="22px">二号</option>
+			<option value="24px">小一</option>
+			<option value="26px">一号</option>
+			<option value="36px">小初</option>
+			<option value="42px">初号</option>
+		</select></td><td style='border:0px' align=right>
+			<table cellspacing=0 cellpadding=0>
+				<tr><td style='border:0px'><input type=text id=colorField readonly onclick="toggleColorList()" style="width:35px;height:14px;border-right:none"><img src="{appmap}/dm/images/dropdown.jpg" border=no onclick="toggleColorList()" style="vertical-align:bottom"></td></tr>
+				<tr><td style='border:0px'><div id=colorList style="position:absolute;display:none;border:1px solid #C0C0C0"></div></td></tr>
+			</table>
+		</td></tr>
+	</table>
+	<table cellspacing=7 border=0 style='border:0px solid red;width:100%'>
+		<tr><td style='border:0px' valign=top>
+				<table cellspacing=0 cellpadding=0><tr>
+					<td style='border:0px' id=fontBold style="background-color:#C0C0C0" onclick="toggleFontBold()"><img src="{appmap}/dm/images/font_bold.gif" border=no></td>
+					<td style='border:0px' id=fontItalic style="background-color:#C0C0C0" onclick="toggleFontItalic()"><img src="{appmap}/dm/images/font_italic.gif" border=no></td>
+					<td style='border:0px' id=fontUnderline style="background-color:#C0C0C0" onclick="toggleFontUnderline()"><img src="{appmap}/dm/images/font_underline.gif" border=no></td>
+				</tr></table>
+			</td>
+			<td style='border:0px' valign=top>
+				<table cellspacing=0 cellpadding=0><tr>
+					<td style='border:0px' id=alignLeft style="background-color:#C0C0C0" onclick="setAlign(this)"><img src="{appmap}/dm/images/align_left.gif" border=no></td>
+					<td style='border:0px' id=alignCenter style="background-color:#C0C0C0" onclick="setAlign(this)"><img src="{appmap}/dm/images/align_center.gif" border=no></td>
+					<td style='border:0px' id=alignRight style="background-color:#C0C0C0" onclick="setAlign(this)"><img src="{appmap}/dm/images/align_right.gif" border=no></td>
+				</tr></table>
+			</td>
+			<td id=sampleText width=117px align=right height=52px style="border:1px solid #c0c0c0;vertical-align:middle;text-align:center">示例</td>
+		</tr>
+	</table>
+	<table cellspacing=7 border=0 style='border:0px solid red;width:100%'>
+		<tr>
+			<td style='border:0px' style="font-size:12px">缩放系数</td>
+			<td style='border:0px' style="font-size:12px" align=right><input id=zoomBox type=text style="width:222px"></td>
+		</tr>
+	</table>
+	<table cellspacing=7 border=0 style='border:0px solid red;width:100%'>
+		<tr>
+			<td style='border:0px' style="font-size:12px">数据格式</td>
+			<td style='border:0px' style="font-size:12px" align=right><input id=formatBox type=text style="width:222px"></td>
+		</tr>
+	</table>
+	<table cellspacing=7 border=0 style='border:0px solid red;width:100%'>
+		<tr><td style='border:0px'><select size=2 style="width:85px;height:145px" onclick="changeFormatList(value)">
+			<option value="0">数值</option>
+			<option value="1">货币</option>
+			<option value="2">日期</option>
+			<option value="3">时间</option>
+			<option value="4">日期时间</option>
+			<option value="5">分数</option>
+			<option value="6">科学计数</option>
+			</select>
+		</td><td style='border:0px' align=right><select size=2 id=formatList style="width:195px;height:145px" onclick="$$('formatBox').value = value">
+			<option value="#0.00">#0.00</option>
+			<option value="#.00">#.00</option>
+			<option value="#.#">#.#</option>
+			<option value="#0.000">#0.000</option>
+			<option value="#.000">#.000</option>
+			<option value="#,##0.00">#,##0.00</option>
+			<option value="#,###.00">#,###.00</option>
+			<option value="#,###.#">#,###.#</option>
+			<option value="#,##0.000">#,##0.000</option>
+			<option value="#,###.000">#,###.000</option>
+			</select>		
+		</td></tr>
+	</table>
+</div>
+
+<div style='border-bottom:1px solid #CEE2F9;margin:0 0 1px 0;font-size:1px;'></div>
+<div class='ui-corner-all' style='height:25px;padding: 6px 0 3px 0px;background-color:#CEE2F9;'>
+	<div style='padding:0 10px 0 0;float:right;'>
+		<input type='button' onclick='getCellStyle();' style='width:51px;height:22px;border:0px;font-size:12px;background-image:url("{appmap}/dm/images/but_back_2.png");' value='确定'>&nbsp;
+		<input type='button' onclick="$('#styleDialog').dialog('close');" style='width:51px;height:22px;border:0px;font-size:12px;background-image:url("{appmap}/dm/images/but_back_2.png");' value='取消'>
+	</div>
+</div>
+
+<script type="text/javascript" src="{appmap}/DMServlet?action=1&file=%2Fcom%2Fraq%2Fweb%2Fview%2FcellStyle.js"></script>

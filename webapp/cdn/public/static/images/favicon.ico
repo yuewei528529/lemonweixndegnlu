@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<link href="https://assets.gitee.com/assets/projects/application-1184fbb96d2e3b8ded59d23df2a94ce2.css" media="screen" rel="stylesheet" type="text/css" />
+<head>
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='码云,代码托管,git,Git@OSC,gitee.com,开源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='基于Maven构建的springmvc、spring、mybatis-plus、shiro、log4j2、easyui简单实用的权限脚手架。QQ群：523720304' name='Description'>
+<title>
+src/main/webapp/static/style/images/favicon.ico · 轩少/spring-shiro-training - 码云 Gitee.com
+</title>
+<link href="https://assets.gitee.com/assets/favicon-e87ded4710611ed62adc859698277663.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta content='gitee.com/wangzhixuan/spring-shiro-training git https://gitee.com/wangzhixuan/spring-shiro-training.git' name='go-import'>
+<link href="https://assets.gitee.com/assets/application-c2d8673db0fd4897af59d416cdd7088b.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="https://assets.gitee.com/assets/application-3e335c22bbd4510e4e38beee8fb9e756.js" type="text/javascript"></script>
+<script src="https://assets.gitee.com/assets/lib/jquery.timeago.zh-CN-bcd91c2c27a815fa9a395595874b592b.js" type="text/javascript"></script>
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="UghuWILiyYDjemF9A3vmAxgP4YdYHffdz6i8AWcvdoM=" name="csrf-token" />
+<script type="text/javascript">
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.http_clone="https://gitee.com/wangzhixuan/spring-shiro-training.git";gon.user_project="wangzhixuan/spring-shiro-training";gon.manage_branch="\u7ba1\u7406\u5206\u652f";gon.manage_tag="\u7ba1\u7406\u6807\u7b7e";gon.enterprise_id=0;gon.ref="master";
+//]]>
+</script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, ''),
+    imgUrl = '',
+    imgUrlEl = document.querySelector('meta[itemprop=image]')
+  if (imgUrlEl) {
+    imgUrl = imgUrlEl.getAttribute('content')
+  } else {
+    imgUrl = "https://gitee.com/logo_for_wechat.png"
+  }
+  wx.config({
+    debug: false,
+    appId: "wxff219d611a159737",
+    timestamp: "1535268417",
+    nonceStr: "eafe72697f175ac56df167e29da5a527",
+    signature: "5e072c71a3d08733d09a58c04aec56cfa0c738ae",
+    jsApiList: [
+      'onMenuShareTimeline',
+      'onMenuShareAppMessage'
+    ]
+  });
+  wx.ready(function () {
+    wx.onMenuShareTimeline({
+      title: title, // 分享标题
+      link: "https://gitee.com/wangzhixuan/spring-shiro-training/blob/master/src/main/webapp/static/style/images/favicon.ico", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+      imgUrl: imgUrl // 分享图标
+    });
+    wx.onMenuShareAppMessage({
+      title: title, // 分享标题
+      link: "https://gitee.com/wangzhixuan/spring-shiro-training/blob/master/src/main/webapp/static/style/images/favicon.ico", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+      desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+      imgUrl: imgUrl // 分享图标
+    });
+  });
+  wx.error(function(res){
+    console.error('err', res)
+  });
+</script>
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script>
+  var messages = {
+    'zh-CN': {
+      addResult: '增加 <b>{term}</b>',
+      count: '已选择 {count}',
+      maxSelections: '最多 {maxCount} 个选择',
+      noResults: '未找到结果',
+      serverError: '连接服务器时发生错误'
+    },
+    'zh-TW': {
+      addResult: '增加 <b>{term}</b>',
+      count: '已選擇 {count}',
+      maxSelections: '最多 {maxCount} 個選擇',
+      noResults: '未找到結果',
+      serverError: '連接服務器時發生錯誤'
+    }
+  }
+  
+  if (messages[gon.locale]) {
+    $.fn.dropdown.settings.message = messages[gon.locale]
+  }
+</script>
+
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html";
+</script>
+<![endif]-->
+</head>
+
+<body class='git-project lang-zh-CN'>
+<script src="https://assets.gitee.com/assets/projects/app-ce77298af95f4d28211929d898282fc5.js" type="text/javascript"></script>
+<header class='common-header fixed noborder' id='git-header-nav'>
+<div class='ui container'>
+<div class='ui menu'>
+<div class='item gitosc-logo'>
+<a href="/"><img class='ui inline image' height='28' src='/logo.svg?20171024' width='95'>
+<img class='ui inline black image' height='28' src='/logo-black.svg?20171024' width='95'>
+</a></div>
+<a href="/explore" class="item " title="开源软件">开源软件
+</a><a href="/enterprises" class="item " title="企业版">企业版
+<sup class='ui red label'>
+特惠
+</sup>
+</a><a href="/education" class="item " title="高校版">高校版
+</a><a href="https://blog.gitee.com/" class="item" id="gitee-blog" target="_blank" title="博客">博客
+</a><div class='right menu userbar' id='git-nav-user-bar'>
+<div class='item'>
+<form accept-charset="UTF-8" action="/search" autocomplete="on" data-text-filter="搜索格式不正确" data-text-require="搜索关键字不能少于1个" id="navbar-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui mini fluid input'>
+<input id="navbar-search-input" name="q" placeholder="搜索项目、代码片段..." type="text" value="" />
+<input id="navbar-search-type" name="type" type="hidden" />
+</div>
+</form>
+
+
+</div>
+<a href="/signup" class="item">注册
+</a><a href="/login" class="item">登录
+</a><script>
+  $('.destroy-user-session').click(function() {
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+</script>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div class='fixed-notice-messages'>
+<div class='ui container'>
+<div class='flash-messages' id='messages-container'></div>
+</div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, setCookie, template;
+  
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else {
+          alertTip = notify_content.message;
+        }
+        $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        $.notify(notify_content, notify_options);
+      }
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1534747023");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+
+<div class='git-project-header'>
+<div class='fixed-notice-messages'>
+<div class='ui info icon floating message green' id='fetch-ok' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+代码拉取完成，页面将自动刷新
+</div>
+</div>
+</div>
+<div class='ui info icon floating message error' id='fetch-error' style='display: none'>
+<div class='content'>
+<div class='header status-title'>
+<i class='info icon status-icon'></i>
+<span class='error_msg'></span>
+</div>
+</div>
+</div>
+</div>
+<div class='ui container'>
+<div class='git-project-categories'>
+<a href="/explore">开源项目</a>
+<span class='symbol'>></span>
+<a href="/explore/starred/program-develop">程序开发</a>
+<span class='symbol'>></span>
+<a href="/explore/starred/authority-management">权限管理</a>
+<span class='symbol and-symbol'>&</span>
+</div>
+
+<div class='git-project-header-details'>
+<div class='git-project-header-actions'>
+<span class='ui basic buttons'>
+<a class='ui button donate' id='project-donate' title='捐赠'>
+<i class='iconfont icon-donation'></i>
+捐赠
+</a>
+<a class='ui button social-count' href='/wangzhixuan/spring-shiro-training#project-donate-overview'>13</a>
+<div class='ui tiny modal project-donate-modal' id='project-donate-modal'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>捐赠</div>
+<div class='content'>
+该项目未开启捐赠功能，可发送私信通知作者开启
+</div>
+<div class='actions'>
+<a class='ui blank button cancel'>取消</a>
+<a class='ui orange ok button' href='/notifications/messages/91670'>发送私信</a>
+</div>
+</div>
+<div class='ui small modal wepay-qrcode'>
+<i class='iconfont icon-close close'></i>
+<div class='header'>
+扫描微信二维码支付
+<span class='wepay-cash'></span>
+</div>
+<div class='content weqcode-center'>
+<img id='wepay-qrcode' src=''>
+</div>
+<div class='actions'>
+<div class='ui cancel blank button'>取消</div>
+<div class='ui ok orange button'>
+支付完成
+</div>
+</div>
+</div>
+</span>
+
+<span class='ui basic buttons watch-container'>
+<a href="/login" class="ui button watch" title="登录以Watch"><i class='iconfont icon-watch'></i>
+Watch
+</a><a href="/wangzhixuan/spring-shiro-training/watchers" class="ui button social-count" title="873">873
+</a></span>
+<span class='ui basic buttons star-container'>
+<a href="/login" class="ui button star" title="你必须登录后才可以star一个仓库"><i class='iconfont icon-star'></i>
+Star
+</a><a href="/wangzhixuan/spring-shiro-training/stargazers" class="ui button social-count" title="2007">2k
+</a></span>
+<span class='ui basic buttons fork-container' data-content='无权 Fork 此项目'>
+<a href="/login" class="ui button fork "><i class='iconfont icon-fork'></i>
+Fork
+</a><a href="/wangzhixuan/spring-shiro-training/members" class="ui button social-count" title="1041">1k
+</a></span>
+</div>
+<h2 class='git-project-title'>
+<span class="project-title"><i class="iconfont icon-project-public" title="这是一个公开项目"></i> <a href="/wangzhixuan" class="author" title="轩少">轩少</a> / <a href="/wangzhixuan/spring-shiro-training" class="repository" style="padding-bottom: 0px" target="" title="spring-shiro-training">spring-shiro-training</a></span><span class="project-badges"><a href="/explore/recommend?lang=Java" class="ui small label" id="project-language" target="_blank" title="主要编程语言">Java</a><a href="/explore" class="git-project-recommend-badge" title="已被推荐"><i class='iconfont icon-recommended'></i>
+</a></span>
+
+<input id="recomm_at" name="recomm_at" type="hidden" value="2015-12-07 13:02" />
+<input id="project_title" name="project_title" type="hidden" value="轩少/spring-shiro-training" />
+</h2>
+</div>
+</div>
+<div class='row' id='import-result-message' style='padding-top: 0px; display: none'>
+<div class='sixteen wide column'>
+<div class='ui icon yellow message status-color'>
+<i class='info icon status-icon' style='width:60px;padding-right:12px;'></i>
+<i class='close icon'></i>
+<div class='header status-title'>
+同步状态
+</div>
+<span class='status-message'></span>
+</div>
+</div>
+</div>
+<div class='ui small modal' id='modal-fork-project'>
+<i class='icon-close iconfont close'></i>
+<div class='header'>
+Fork 项目
+</div>
+<div class='content'>
+<div class='fork-info-content'>
+<div class='ui segment fork_project_loader'>
+<div class='ui active inverted dimmer'>
+<div class='ui text loader'>加载中</div>
+</div>
+</div>
+</div>
+</div>
+<div class='actions fork-action hide'>
+<a class='cancel'>&emsp;取消&emsp;</a>
+<div class='ui large button orange ok'>&emsp;确认&emsp;</div>
+</div>
+</div>
+<script>
+  (function() {
+    $('.fork-container').popup({
+      inline: true,
+      hoverable: true,
+      position: 'bottom left'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  (function() {
+    $('#modal-fork-project').modal({
+      transition: 'fade'
+    });
+  
+    $('.checkbox.sync-wiki').checkbox();
+  
+  }).call(this);
+</script>
+<style>
+  i.loading{-webkit-animation:icon-loading 1.2s linear infinite;animation:icon-loading 1.2s linear infinite}.qrcode_cs{float:left}.check-sync-wiki{float:left;height:28px;line-height:28px}.check-sync-wiki .sync-wiki-warn{color:#e28560}
+</style>
+
+<div class='git-project-nav'>
+<div class='ui container'>
+<div class='ui secondary pointing menu'>
+<a href="/wangzhixuan/spring-shiro-training" class="item active"><i class='iconfont icon-code'></i>
+代码
+</a><a href="/wangzhixuan/spring-shiro-training/issues" class="item "><i class='iconfont icon-issue'></i>
+Issues
+<span class='ui mini circular label'>
+0
+</span>
+</a><a href="/wangzhixuan/spring-shiro-training/pulls" class="item "><i class='iconfont icon-pull-request'></i>
+Pull Requests
+<span class='ui mini circular label'>
+0
+</span>
+</a><a href="/wangzhixuan/spring-shiro-training/attach_files" class="item "><i class='iconfont icon-annex'></i>
+附件
+<span class='ui mini circular label'>0</span>
+</a><a href="/wangzhixuan/spring-shiro-training/wikis" class="item "><i class='iconfont icon-wiki'></i>
+Wiki
+<span class='ui mini circular label'>
+7
+</span>
+</a><a href="/wangzhixuan/spring-shiro-training/graph/master" class="item  "><i class='iconfont icon-statistics'></i>
+统计
+</a><div class='item'>
+<div class='ui pointing top right dropdown git-project-service'>
+<div class='text'>
+<i class='iconfont icon-service'></i>
+服务
+</div>
+<i class='dropdown icon'></i>
+<div class='menu' style='display:none'>
+<a href="/wangzhixuan/spring-shiro-training/paas/code_pipeline" class="item"><img alt="Code_pipeline" src="https://assets.gitee.com/assets/code_pipeline-502dbffc863fcc0b6867628c9e8e163e.svg" />
+<div class='item-title'>
+阿里云CodePipeline
+</div>
+</a><a href="/wangzhixuan/spring-shiro-training/paas/huaweicloud_swr" class="item"><img alt="Huaweirqy" src="https://assets.gitee.com/assets/huaweirqy-c24d1adc35c0ecb2bc1e39f6e033835c.png" />
+<div class='item-title'>
+华为容器云
+</div>
+</a><a href="/wangzhixuan/spring-shiro-training/paas/huaweicloud_cse" class="item"><img alt="Hauweiwfw" src="https://assets.gitee.com/assets/hauweiwfw-9edbcf60ca0a5d0de81d2fc804efa9ac.png" />
+<div class='item-title'>
+华为微服务平台
+</div>
+</a><a href="/wangzhixuan/spring-shiro-training/paas/tencent_hub" class="item"><img alt="Tencent_hub" src="https://assets.gitee.com/assets/tencent_hub-e263083dfb38e2149d8a9eca5347f4d5.png" />
+<div class='item-title'>
+Tencent Hub
+</div>
+</a><a href="/wangzhixuan/spring-shiro-training/paas/select_platform" class="item"><img alt="Mopaas_mini" src="https://assets.gitee.com/assets/mopaas_mini-72f0d5aeae31630ae89f624dfb0c23ca.png" />
+<div class='item-title'>
+MoPaaS V3
+</div>
+</a><a href="/wangzhixuan/spring-shiro-training/quality_analyses?platform=sonar_qube" class="item"><img alt="Sonar_mini" src="https://assets.gitee.com/assets/sonar_mini-6270e37950512a0bf0a05ac5b9b11243.png" />
+<div class='item-title'>
+质量分析
+</div>
+</a><a href="/wangzhixuan/spring-shiro-training/quality_analyses?platform=codesafe" class="item"><img alt="Dmws" src="https://assets.gitee.com/assets/dmws-7fce33f3494048913a196a40f998a9ba.png" />
+<div class='item-title'>
+源代码缺陷检测
+</div>
+</a><a href="/wangzhixuan/spring-shiro-training/pages" class="item"><img alt="Gitee" src="https://assets.gitee.com/assets/gitee-d6fb391be28450a587df71dda0325f60.png" />
+<div class='item-title'>
+Gitee Pages
+</div>
+</a><a href="/wangzhixuan/spring-shiro-training/javadoc" class="item"><img alt="Maven" src="https://assets.gitee.com/assets/maven-aea8b4f12e957c8c67de9c6fc83d27e6.png" />
+<div class='item-title'>
+JavaDoc
+</div>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $('.git-project-nav .ui.dropdown').dropdown({ action: 'nothing' });
+</script>
+<style>
+  .git-project-nav i.checkmark.icon {
+    color: green;
+  }
+</style>
+<script>
+  $('#git-versions.dropdown').dropdown();
+  $.ajax({
+    url:"/wangzhixuan/spring-shiro-training/access/add_access_log",
+    type:"GET"
+  });
+</script>
+
+</div>
+<div class='register-guide'>
+<div class='register-container'>
+<div class='regist'>
+加入码云
+</div>
+<div class='description'>
+与超过 300 万 开发者一起发现、参与优秀开源项目，私有仓库也完全免费 ：）
+</div>
+<a href="/signup?from=project-guide" class="ui orange button free-registion">免费加入</a>
+<div class='login'>
+已有帐号？
+<a href="/login?from=project-guide">立即登录</a>
+</div>
+</div>
+</div>
+
+<div class='git-project-content-wrapper'>
+<div class='ui container'>
+<div class='git-project-content' id='git-project-content'>
+<div class='row' id='git-detail-clone'>
+<div class='git-project-desc-wrapper'>
+<div class='git-project-desc'>
+<span class='git-project-desc-text'>
+基于Maven构建的springmvc、spring、mybatis-plus、shiro、log4j2、easyui简单实用的权限脚手架。QQ群：523720304
+</span>
+<span class='git-project-homepage'>
+<a href="http://www.dreamlu.net" id="homepage" rel="nofollow" target="_blank">http://www.dreamlu.net</a>
+</span>
+</div>
+<div class='git-project-desc-edit ui form'>
+<div class='fields'>
+<div class='eight wide field'>
+<div class='ui small input'>
+<input name='project[description]' placeholder='描述' type='text' value='基于Maven构建的springmvc、spring、mybatis-plus、shiro、log4j2、easyui简单实用的权限脚手架。QQ群：523720304'>
+</div>
+</div>
+<div class='four wide field'>
+<div class='ui small input'>
+<input data-regex-value='(^$)|(^(http|https):\/\/(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).*)|(^(http|https):\/\/[a-zA-Z0-9]+([_\-\.]{1}[a-zA-Z0-9]+)*\.[a-zA-Z]{2,10}(:[0-9]{1,10})?(\/.*)?$)' name='project[homepage]' placeholder='项目主页(eg: https://gitee.com)' type='text' value='http://www.dreamlu.net'>
+</div>
+</div>
+<button class='ui orange button btn-save'>
+保存更改
+</button>
+<button class='ui button btn-cancel-edit'>
+取消
+</button>
+</div>
+</div>
+<script>
+  $(function () {
+    new ProjectInfoEditor({
+      el: '.git-project-desc-wrapper',
+      homepage: "http://www.dreamlu.net",
+      description: "\u57fa\u4e8eMaven\u6784\u5efa\u7684springmvc\u3001spring\u3001mybatis-plus\u3001shiro\u3001log4j2\u3001easyui\u7b80\u5355\u5b9e\u7528\u7684\u6743\u9650\u811a\u624b\u67b6\u3002QQ\u7fa4\uff1a523720304",
+      url: "/wangzhixuan/spring-shiro-training/update_description",
+      modalHelper: Gitee.modalHelper
+    })
+  })
+</script>
+</div>
+
+</div>
+<div class='ui horizontal hollow nopadding segments git-project-stats'>
+<div class='ui segment center aligned'>
+<a href="/wangzhixuan/spring-shiro-training/commits/master"><i class='iconfont icon-commit'></i>
+<b id='commits_count'>335</b>
+次提交
+</a></div>
+<div class='ui segment center aligned'>
+<a href="/wangzhixuan/spring-shiro-training/branches"><i class='iconfont icon-branches'></i>
+<b id='branches_count'>3</b>
+个分支
+</a></div>
+<div class='ui segment center aligned'>
+<a href="/wangzhixuan/spring-shiro-training/tags"><i class='iconfont icon-tag'></i>
+<b id='tags_count'>7</b>
+个标签
+</a></div>
+<div class='ui segment center aligned'>
+<a href="/wangzhixuan/spring-shiro-training/releases"><i class='iconfont icon-release'></i>
+<b id='releases_count'>0</b>
+个发行版
+</a></div>
+<div class='ui segment center aligned'>
+<a href="/wangzhixuan/spring-shiro-training/contributors?ref=master"><i class='iconfont icon-collaborators'></i>
+<b id='collaborators_count'></b>
+<span class='contributor_text'>
+正在获取贡献者
+</span>
+</a></div>
+</div>
+<div class='git-project-bread' id='git-project-bread'>
+<div class='ui right floated horizontal list'>
+<div class='item'>
+<div class='ui orange button dropdown' id='btn-dl-or-clone'>
+克隆/下载
+<i class='dropdown icon'></i>
+</div>
+</div>
+</div>
+<div class='ui horizontal list'>
+<div class='item item git-project-branch-item'>
+<input id="path" name="path" type="hidden" value="src/main/webapp/static/style/images/favicon.ico" />
+<div class='ui top left pointing dropdown gradient button dropdown-has-tabs' id='git-project-branch'>
+<input id="ref" name="ref" type="hidden" value="master" />
+<div class='default text'>
+master
+</div>
+<i class='dropdown icon'></i>
+<div class='menu'>
+<div class='ui left icon search input'>
+<i class='iconfont icon-search'></i>
+<input placeholder='搜索分支' type='text'>
+</div>
+<div class='tab-menu'>
+<div class='tab-menu-action' data-tab='branches'>
+<a href="/wangzhixuan/spring-shiro-training/branches/recent" class="ui link button">管理</a>
+</div>
+<div class='tab-menu-action' data-tab='tags'>
+<a href="/wangzhixuan/spring-shiro-training/tags" class="ui link button">管理</a>
+</div>
+<div class='tab-menu-item' data-placeholder='搜索分支' data-tab='branches'>
+分支 (3)
+</div>
+<div class='tab-menu-item' data-placeholder='搜索标签' data-tab='tags'>
+标签 (7)
+</div>
+</div>
+<div class='tab scrolling menu' data-tab='branches'>
+<div class='item' data-value='master'>master</div>
+<div class='item' data-value='dev-kisso'>dev-kisso</div>
+<div class='item' data-value='dev'>dev</div>
+</div>
+<div class='tab scrolling menu' data-tab='tags'>
+<div class='item' data-value='ztree'>ztree</div>
+<div class='item' data-value='v1.3.1'>v1.3.1</div>
+<div class='item' data-value='v1.3.0'>v1.3.0</div>
+<div class='item' data-value='v1.2.0'>v1.2.0</div>
+<div class='item' data-value='v1.1.1'>v1.1.1</div>
+<div class='item' data-value='v1.0.0'>v1.0.0</div>
+<div class='item' data-value='v0.0.1'>v0.0.1</div>
+</div>
+</div>
+</div>
+</div>
+<div class='item'>
+<div class='repo-index repo-none-index' style='margin-left:0px;'>
+<div class='ui horizontal list repo-action-list'>
+<div class='item'>
+<div class='ui pointing right top dropdown gradient button' id='git-project-file'>
+<div class='text'>文件</div>
+<i class='dropdown icon'></i>
+<div class='menu'>
+<div class='disabled item'>新建文件</div>
+<div class='disabled item'>上传文件</div>
+<a class='item repo-action' id='search-files'>
+搜索文件
+</a>
+</div>
+</div>
+</div>
+<div class='item'>
+<a href="/wangzhixuan/spring-shiro-training/widget" class="ui gradient button repo-action"><i class='iconfont icon-widget icon-orange'></i>
+挂件
+</a></div>
+</div>
+</div>
+</div>
+<div class='breadcrumb_path item path-breadcrumb-contrainer'>
+<div class='ui breadcrumb path project-path-breadcrumb' id='path-breadcrumb'>
+<a href="/wangzhixuan/spring-shiro-training/tree/master" class="section repo-name" data-direction="back" style="font-weight: bold">spring-shiro-training
+</a><div class='divider'>
+/
+</div>
+<strong>
+<a href="/wangzhixuan/spring-shiro-training/tree/master/src" class="section" data-direction="back"><span class='cblue'>
+src
+</span>
+</a></strong>
+<div class='divider'>
+/
+</div>
+<strong>
+<a href="/wangzhixuan/spring-shiro-training/tree/master/src/main" class="section" data-direction="back"><span class='cblue'>
+main
+</span>
+</a></strong>
+<div class='divider'>
+/
+</div>
+<strong>
+<a href="/wangzhixuan/spring-shiro-training/tree/master/src/main/webapp" class="section" data-direction="back"><span class='cblue'>
+webapp
+</span>
+</a></strong>
+<div class='divider'>
+/
+</div>
+<strong>
+<a href="/wangzhixuan/spring-shiro-training/tree/master/src/main/webapp/static" class="section" data-direction="back"><span class='cblue'>
+static
+</span>
+</a></strong>
+<div class='divider'>
+/
+</div>
+<strong>
+<a href="/wangzhixuan/spring-shiro-training/tree/master/src/main/webapp/static/style" class="section" data-direction="back"><span class='cblue'>
+style
+</span>
+</a></strong>
+<div class='divider'>
+/
+</div>
+<strong>
+<a href="/wangzhixuan/spring-shiro-training/tree/master/src/main/webapp/static/style/images" class="section" data-direction="back"><span class='cblue'>
+images
+</span>
+</a></strong>
+<div class='divider'>
+/
+</div>
+<strong>
+favicon.ico
+</strong>
+</div>
+
+</div>
+</div>
+<div class='ui popup bottom right transition hidden git-project-download-panel'>
+<div class='ui small secondary pointing menu'>
+<a class='item active' data-type='http' data-url='https://gitee.com/wangzhixuan/spring-shiro-training.git'>HTTPS</a>
+<a class='item' data-type='ssh' data-url='git@gitee.com:wangzhixuan/spring-shiro-training.git'>SSH</a>
+</div>
+<div class='ui fluid right labeled small input'>
+<input id="project_clone_url" name="project_clone_url" onclick="focus();select()" readonly="readonly" type="text" value="https://gitee.com/wangzhixuan/spring-shiro-training.git" />
+<div class='ui basic label'>
+<div class='ui small basic orange button' data-clipboard-target='#project_clone_url' id='btn-copy-clone-url'>
+复制
+</div>
+</div>
+</div>
+<hr>
+<a href="/login?url_to=/wangzhixuan/spring-shiro-training/repository/archive/master.zip" class="ui fluid download link button" data-confirm="为了避免盗链导致资源占用，登录后才能下载，确定登录?
+强烈推荐: git clone &quot;https://gitee.com/wangzhixuan/spring-shiro-training.git&quot;"><i class='icon download'></i>
+下载ZIP
+</a><hr>
+
+</div>
+</div>
+<style>
+  .ui.dropdown .menu>.header{text-transform:none}
+</style>
+<script>
+  $(document).ready(function () {
+    var $contri_count = $('#collaborators_count')
+    var $contri_text = $('.contributor_text')
+    $.ajax({
+      url: '/wangzhixuan/spring-shiro-training/contributors_count?ref=master',
+      method: 'GET',
+      success: function(data) {
+        if (data.status === 1) {
+          $contri_count.text(data.contributors_count);
+          $contri_text.text('位贡献者')
+        } else {
+          $contri_text.text('获取失败')
+        }
+      }
+    });
+    var $tip = $('#apk-download-tip');
+    if (!$tip.length) {
+      return;
+    }
+    $tip.find('.btn-close').on('click', function () {
+      $tip.slideUp();
+    });
+  });
+  Gitee.initTabsInDropdown($('#git-project-branch').dropdown({
+    fullTextSearch: true,
+    onChange: function (value, text) {
+      var path = $('#path').val();
+      var href = ['/wangzhixuan/spring-shiro-training/tree', value, path].join('/');
+      window.location.href = href;
+    }
+  }));
+  $('#git-project-file').dropdown({ action: 'hide' });
+  (function(){
+    function pathAutoRender() {
+      var $parent = $('#git-project-bread'),
+          $child = $('#git-project-bread').children('.ui.horizontal.list'),
+          mainWidth = 0;
+      $child.each(function (i,item) {
+        mainWidth += $(item).width()
+        });
+      $('.breadcrumb.path.fork-path').remove();
+      if (mainWidth > 995) {
+        $('#path-breadcrumb').hide();
+        $parent.append('<div class="ui breadcrumb path fork-path">' + $('#path-breadcrumb').html() + '<div/>')
+      } else {
+        $('#path-breadcrumb').show();
+      }
+    }
+    window.pathAutoRender = pathAutoRender;
+    pathAutoRender();
+  })();
+</script>
+<script>
+  (function() {
+    var $btnCopy, $input, $item, $panel, clipboard, remoteWay;
+  
+    $input = $('#project_clone_url');
+  
+    remoteWay = '';
+  
+    clipboard = new Clipboard('#btn-copy-clone-url');
+  
+    $panel = $('.git-project-download-panel');
+  
+    $btnCopy = $('#btn-copy-clone-url');
+  
+    $panel.find('.menu > .item').on('click', function() {
+      var $item;
+  
+      $item = $(this).addClass('active');
+      $item.siblings().removeClass('active');
+      $input.val($item.attr('data-url'));
+      return $.cookie('remote_way', $item.attr('data-type'), {
+        expires: 365,
+        path: '/'
+      });
+    });
+  
+    $('#btn-dl-or-clone').popup({
+      popup: $panel,
+      position: 'bottom right',
+      on: 'click'
+    });
+  
+    if (remoteWay) {
+      $item = $panel.find('.item[data-type="' + remoteWay + '"]');
+      if ($item.length === 0) {
+        $item = $panel.find('.item[data-type="http"]');
+      }
+      if ($item.length === 0) {
+        $item = $panel.find('.item[data-type="ssh"]');
+      }
+      if ($item.length === 0) {
+        $item = $panel.find('.item[data-type="svn"]');
+      }
+      $item.addClass('active').siblings().removeClass('active');
+      $input.val($item.attr('data-url'));
+    }
+  
+    clipboard.on('success', function() {
+      $btnCopy.popup({
+        content: '已复制',
+        position: 'right center',
+        onHidden: function() {
+          return $btnCopy.popup('destroy');
+        }
+      });
+      return $btnCopy.popup('show');
+    });
+  
+    clipboard.on('error', function() {
+      $btnCopy.popup({
+        content: '复制失败，请手动复制',
+        position: 'right center',
+        onHidden: function() {
+          return $btnCopy.popup('destroy');
+        }
+      });
+      return $btnCopy.popup('show');
+    });
+  
+  }).call(this);
+</script>
+
+<div class='row column tree-holder' id='tree-holder'>
+<div class='tree-content-holder' id='tree-content-holder'>
+<div class='file_holder'>
+<div class='file_title'>
+<div class='options'><div class='ui mini buttons basic'>
+<a href="/wangzhixuan/spring-shiro-training/raw/master/src/main/webapp/static/style/images/favicon.ico" class="ui button edit-raw" target="_blank">原始数据</a>
+<a href="/wangzhixuan/spring-shiro-training/commits/master/src/main/webapp/static/style/images/favicon.ico" class="ui button edit-history">历史</a>
+</div>
+<script>
+  "use strict";
+  try {
+    if((gon.wait_fork!=undefined && gon.wait_fork==true) || (gon.wait_fetch!=undefined && gon.wait_fetch==true)){
+      $('.edit-blob').popup({content:"当前项目正在后台处理中,暂时无法编辑", on: 'hover', delay: { show: 200, hide: 200 }});
+      $('.edit-blob').click(function(e){
+        e.preventDefault();
+      })
+    }
+  
+    var setUrl = function() {
+      var params = window.location.search
+      if (params==undefined || $.trim(params).length==0) return;
+      $('span.options').children('.basic').find('a').each(function(index,ele){
+        var origin_href = $(ele).attr('href');
+        if (origin_href!="#" && origin_href.indexOf('?') == -1){
+          $(ele).attr('href',origin_href+params);
+        }
+      });
+    }
+  
+    setUrl();
+  
+    var clipboard = null,
+        $btncopy  = $("#copy-text");
+  
+    clipboard = new Clipboard("#copy-text", {
+      text: function(trigger) {
+        return $("#blob_raw").val();
+      }
+    })
+  
+    clipboard.on('success', function(e) {
+      $btncopy.popup('hide');
+      $btncopy.popup('destroy');
+      $btncopy.popup({content: '已复制', position: 'bottom center'});
+      $btncopy.popup('show');
+    })
+  
+    clipboard.on('error', function(e) {
+      var giteeModal = new GiteeModalHelper({okText: '确定'});
+      giteeModal.alert("一键复制", '复制失败，请手动复制');
+    })
+  
+    $(function() {
+      $btncopy.popup({
+        content: '点击复制',
+        position: 'bottom center'
+      })
+    })
+  
+  } catch (error) {
+    console.log('blob/action error:' + error);
+  }
+</script>
+</div>
+<div class='blob-description'>
+<i class='iconfont icon-readme'></i>
+<span class='file_name'>
+favicon.ico
+<small>4.19 KB</small>
+</span>
+→
+<span class='recent-commit' style='margin-top: 0.7rem'>
+<a class="commit-author-link" href="mailto:wangzhixuan@iqianjin.com"><img alt="" avatar="wangzhixuan" class="mini avatar circular ui image " /> <span class="commit-author-name">wangzhixuan</span></a>
+<span>提交于</span>
+<span class='timeago commit-date' title='2015-10-11 22:27:12 +0800'>
+2015-10-11 22:27
+</span>
+.
+<a href="/wangzhixuan/spring-shiro-training/commit/2196f22718ea92079f143714f5423ca674cb08ad" title="修改站标">修改站标</a>
+</span>
+
+</div>
+</div>
+<div class='clearfix'></div>
+<div class='file_content image_file'>
+<img src='data:image/vnd.microsoft.icon;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAA&#x000A;ABILAAASCwAAAAAAAAAAAAC3clT/t3JU/7dyVP+3c1X/uHRW/7dzVf+2cVP/&#x000A;uHVX/7h1V/+2cVL/t3JU/7dyVP+2cVP/t3JU/7dxU/+3clT/t3JU/7dzVf+4&#x000A;dFb/t3NV/7dyVP+3cVP/t3FT/7ZwUv+2cVL/tnFT/7ZxUv+3clT/t3JU/7dy&#x000A;VP+3clT/t3JU/7dyVP+3clP/u3pd/8aQeP/Ch27/w4lw/8KIbv/Ik3z/ypeB&#x000A;/8KIb/+4c1X/uHRX/8SMc//Kl4D/vX1i/7ZxUv+7el7/x5B5/8KIbv/Bhmz/&#x000A;unlc/8SMc//DinH/zJuG/8qWgP/JlX7/xpB4/7l1WP+3clT/t3JU/7dyVP+3&#x000A;clT/t3JU/7ZxU/+/gmf/yJN8/7dxU/+4dVf/0KOP/86fiv+6eFz/x5F5/8uZ&#x000A;g//KmIH/xIty/8CDaP/JlH3/uHNW/7+BZv/HkXn/uHRW/8aPd//HkXn/xpB3&#x000A;/7x7X//gwrX/xIxz/71+Yv/Gj3f/wohu/7ZxU/+3clT/t3JU/7dyVP+3clT/&#x000A;t3FT/7+BZv/On4v/vH1h/7ZwUv/Ik3z/y5mE/7h0V/+2cVL/vHxg/7t6Xv+2&#x000A;cVL/uXVY/82ch/+9fmL/voBl/8aPd/+8e1//zZ6J/8ych//EjHP/vn9k/9ex&#x000A;of/Jln//unhb/75/ZP/GkHj/tnFT/7dyVP+3clT/t3JU/7dyVP+3clT/uXda&#x000A;/86gi//KmIH/tnFS/8WOdv/JlX//zJuF/7t5XP+2cVP/tnFT/7t6Xv/NnIf/&#x000A;w4pw/7dzVf++gGX/xo93/71+Yv/Ch27/vX1h/8OJb//Ag2n/vX9j/8SMc/+9&#x000A;f2P/voBl/8aQeP+2cVP/t3JU/7dyVP+3clT/t3JU/7dyVP+6d1r/zJyH/76A&#x000A;Zf+2cVP/wohv/86gi//Kl4H/uHRW/7l2Wf+5dln/uXVY/8qYgv+9fWH/tnBS&#x000A;/8CEaf/DinL/vn9k/8iUff+9fmP/w4lw/8CDaf+8fGH/wolv/71+Y/++gGX/&#x000A;xo94/7ZxUv+3clT/t3JU/7dyVP+3clT/t3FT/76AZf/MnIb/tnFT/7dyVP+3&#x000A;c1X/0aSQ/8OKcf+2cFH/zJqF/8uahP+2cFL/vn9k/8SLcv+5dln/xpB4/7p4&#x000A;XP+8fGD/y5qE/75/ZP/DiXD/wINo/7+BZv/JlH3/vn9k/76AZf/JlX//t3FT&#x000A;/7dyVP+3clT/t3JU/7dyVP+3cVP/vHtf/8uZhP/BhWv/t3JU/7l1WP/Ik3z/&#x000A;u3ld/7dyVP+6d1r/unda/7dyVP+5dVf/wINp/8GGbP/Kl4D/t3JU/7p3Wv/L&#x000A;mIL/voBk/8OJcP+/gWb/zJyG/9Wsmv+6eFv/unlc/9Gmk/+8fWH/t3FT/7dy&#x000A;VP+3clT/t3JU/7dyVP+5d1r/ypZ//8mVf/+3cVP/wYVr/928rv/VrZv/ypeB&#x000A;/7dyU/+4dFf/zZ6J/9Ssmv/Kl4H/t3NV/8iSe//PoIz/vHxg/8qXgP/HkXn/&#x000A;xIty/7+DaP/Uqpj/xo93/7ZvUf+2cFL/ypeA/7+BZv+3cVP/t3JU/7dyVP+3&#x000A;clT/t3FT/7+BZv/On4r/u3pd/7dyU/+7el7/06mX/8aPd//BhWv/t3JU/7hz&#x000A;Vv/CiG7/xY51/8+hjv+9fWH/xpB4/8iUff/TqZb/38Cy/9ewn//Ch23/unhc&#x000A;/9avnf/TqJb/xIx0/8OJb//KmIH/vHtf/7dxU/+3clT/t3JU/7dyVP+3cVP/&#x000A;v4Fn/82diP+5dln/t3JT/7t7X//Onor/tnFS/7ZwUv+3clT/t3JU/7ZwUf+2&#x000A;b1H/ypeB/8mWgP/GkHn/tW9Q/8OJcP/Sp5T/tnBS/7dxU/+4c1b/yJJ7/9Wt&#x000A;m//LmYL/xIxz/8WNdf+4dFb/t3JU/7dyVP+3clT/t3JU/7dyVP+6eFv/zZ2J&#x000A;/8iTfP+2cFL/xo93/9mzo//Kl4H/xIty/7dxU/+3c1X/xo93/8qXgf/RpZH/&#x000A;v4Fn/8iTe//Ag2n/vHxg/9WtnP/NnIf/uXda/8CDaP/DiXD/xpB4/7x9Yf+3&#x000A;clT/wodu/7l2WP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+4dFb/xY11/719&#x000A;Yv/JlH7/w4lw/8CDaP/LmYP/v4Fm/8CEav/Ik3z/v4Fn/719Yf+3clT/uXZZ&#x000A;/8mUff/Ei3L/y5iC/9SqmP/FjXX/y5mD/9Kmk//KloD/vn9k/71+Yv/Ei3L/&#x000A;uXVY/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP/GkHj/zZ6J/8ych/+6&#x000A;eVz/tnFS/8OKcf/LmYP/y5mD/8GFav+2cFL/t3FT/7dyVP+3clP/uHRX/8aO&#x000A;dv/BhWr/vX5j/8uZg//MmoX/xo93/75/ZP+9fWL/vX5i/7x7X/+3clT/t3JU&#x000A;/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/&#x000A;t3FT/7dxU/+3cVP/t3FT/7dyVP+3clT/t3JU/7dyVP+3clT/t3FT/7dxU/+3&#x000A;cVP/tnFS/7ZxUv+2cVL/t3FT/7dxU/+3cVP/t3FT/7dyVP+3clT/t3JU/7dy&#x000A;VP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU&#x000A;/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/&#x000A;t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3&#x000A;clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dy&#x000A;VP+3clT/t3JU/7dyVP+3clT/t3JU/7ZxU/+2cVP/t3JU/7dyVP+3clT/t3JU&#x000A;/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/&#x000A;t3JU/7t5XP+4c1b/t3FT/7dyVP+3cVP/uHNV/7h0Vv+4dFb/uHRW/7h0Vv+3&#x000A;c1X/t3JU/7dyVP+3clT/wINo/8CDaP+6eFv/uHRW/7dyU/+2cVP/t3JT/7dy&#x000A;VP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7ZxU/+/gWf/zJyG&#x000A;/8eRev+6eVz/uXZZ/8KHbf/Hknv/xY52/8WOdv/Fjnb/xY52/8uYgv+7el7/&#x000A;tnFT/71+Yv/LmYT/x5J7/8SMc//JloD/zZ6J/8KIbv+7e17/t3FT/7dyVP+3&#x000A;clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/uXda/8qXgf+7el3/v4Fn/8uZ&#x000A;g//LmoT/1a2b/8aPd/+3c1X/uHRW/7h0Vv+4c1b/zJyG/7+BZv+2cVL/zp+L&#x000A;/8uYgv+6eFv/t3FT/7l2Wf++f2T/xY11/82ch//EjHP/uHNV/7dyVP+3clT/&#x000A;t3JU/7dyVP+3clT/t3JU/7dyU/+7el3/zZ2I/7+BZv+3cVP/unlc/7t5XP+7&#x000A;e1//ypeB/7h0Vv+7el3/unlc/7ZxUv/MmoT/voBl/71+Yv/ZtKP/0aaT/82d&#x000A;if+9fmP/vHxg/8CEav+3clT/uHRX/8WOdf/FjHT/uHNV/7dyVP+3clT/t3JU&#x000A;/7dyVP+3clT/t3JU/7hzVf/Gj3f/yZaA/7h0V/+3cVP/t3FT/8GGbP/NnYj/&#x000A;undb/8qYgv/LmIP/tnBR/8uahP+/gmf/y5iD/9aunf/Sp5T/x5B5/8OJb//L&#x000A;moT/w4lw/7dzVf+9fWH/zZyH/86fi//Gj3f/uHVX/7dyVP+3clT/t3JU/7dy&#x000A;VP+3cVP/vn9k/8ych/+4dFb/t3NV/7hzVv+2cVL/0aWS/8eSe/+2cFH/yZR+&#x000A;/8qYgv+2cFH/y5qE/8CEav/Ch27/tnFT/7x9Yf/FjnX/tnBR/7dxU//DinH/&#x000A;zJyG/8+hjP/DinH/tnBS/8OKcf+6eFv/t3JU/7dyVP+3clT/t3JU/7dyVP+7&#x000A;eV3/ypeB/7dyVP+7el3/yZZ//7dyVP/BhWz/w4lw/7ZwUv/JlH7/ypiC/7Zw&#x000A;Uf/LmoT/wIRp/8WOdv/LmYT/y5qE/8ychv/LmYP/y5mD/82ch//On4v/zp6K&#x000A;/8yahf/Kl4H/xpB4/7p3W/+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP/Hknv/&#x000A;vHxg/7h0Vv/VrJr/vX1i/71+Yv/Kl4D/t3FT/8mUfv/KmIL/tnBR/8uahP+/&#x000A;gWf/x5J7/82eif+/gWb/wIRp/8CDaf/Ag2n/wINp/8CDaP/BhWv/v4Fn/8mW&#x000A;f//Hknv/uHRW/7dyVP+3clT/t3JU/7dyVP+3cVP/u3ld/82ch/+/gWb/tnFS&#x000A;/8WOdv+8fGH/uXZZ/8qXgP+4c1X/yZV//8uYg/+2cFH/zJqF/76AZf++f2T/&#x000A;xY53/7VuUP/Ag2n/vHxh/719Yf+/gWb/uXZY/8SLcv+2cFL/wYZs/71+Y/+3&#x000A;cVP/t3JU/7dyVP+3clT/t3JU/7dxU/+9f2P/voBl/7ZwUv+3clT/t3FT/7Zx&#x000A;U/+3clP/xYx0/7h1V//Ik3z/yJJ7/7ZwUf/MmoT/voBl/8KHbv/NnYj/vn9k&#x000A;/7l1WP+3c1X/vX1h/71+Y/+3clX/uHVX/71+Yv/JlX7/wohv/7dyVP+3clT/&#x000A;t3JU/7dyVP+3clT/t3FT/75/Y//HkXn/v4Fm/7dyVP+3c1X/wINo/8OJb//M&#x000A;moT/uXZY/7hzVf+3c1X/tnBS/8uahP+/gmf/zJuF/8ybhv/GkHj/uXZY/7dy&#x000A;VP/Bhmz/w4hv/7dyVf+4dFb/xItz/8mVfv/Mm4b/unhb/7dyVP+3clT/t3JU&#x000A;/7dyVP+3clT/unda/8aQeP/RpZL/unhb/7h0Vv/OoIv/zp6K/86fi/+9fmL/&#x000A;vX1h/719Yf+8fGH/z6CM/7+CZ//JlX7/v4Jo/71+Yv+3clT/tnFS/7x7X/+8&#x000A;fGH/tnFT/7dyVP+9fmL/voBl/8iTfP+7eV3/t3JU/7dyVP+3clT/t3JU/7dy&#x000A;VP+3clT/tm9R/8iTe//NnIf/ypeB/8mWf/+7el7/y5mE/82diP/NnYj/zZ2I&#x000A;/82diP/Mm4X/unda/8GGbP/GkHn/0aWS/8ychv/Kl4H/0qeU/9SrmP/LmIL/&#x000A;zJuF/9Oolv/KloD/xo52/7h0Vv+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3&#x000A;clT/unhc/8OJcP/Bhm3/vHxg/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dx&#x000A;U/+3clT/t3FT/7ZwUv+7eV3/wYZs/8GHbP+8fWH/vHxg/8GGbP/Bhmz/u3pd&#x000A;/7ZwUv+2cVP/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3clP/&#x000A;tnBS/7ZxUv+3cVP/t3JU/7dyVP+3clT/t3JU/7dyVP+3clT/t3JU/7dyVP+3&#x000A;clT/t3JU/7dxU/+2cVL/tnFS/7dxU/+3cVP/tnFS/7ZxUv+3cVP/t3JU/7dy&#x000A;VP+3clT/t3JU/7dyVP+3clT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&#x000A;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&#x000A;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&#x000A;AAAAAAAAAAAAAAA='>
+</div>
+
+</div>
+</div>
+<div class='tree_progress'></div>
+<div class='ui small modal' id='modal-linejump'>
+<div class='ui custom form content'>
+<div class='field'>
+<div class='ui right action input'>
+<input placeholder='跳转至某一行...' type='number'>
+<div class='ui orange button'>
+跳转
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='row column inner-comment' id='blob-comment'>
+<input id="comment_path" name="comment_path" type="hidden" value="src/main/webapp/static/style/images/favicon.ico" />
+<div class='tree-comments'>
+<h3 id='tree_comm_title'>
+评论
+(
+<span class='comments-count'>
+0
+</span>
+)
+</h3>
+<div class='ui threaded comments middle aligned' id='notes-list'></div>
+<input id="ajax_add_note_id" name="ajax_add_note_id" type="hidden" />
+<div class='text-center'>
+<div class='tip-loading' style='display: none'>
+<div class='ui active mini inline loader'></div>
+正在加载...
+</div>
+</div>
+</div>
+<script>
+  "use strict";
+  (function(){
+    var page = 1
+    var commentsCount = 0
+    var $container = $('.tree-comments')
+    var $comments = $container.find('.ui.comments')
+    var $tipLoading = $container.find('.tip-loading')
+    var $btnLoad = $container.find('.btn-load-more')
+  
+    if (commentsCount < 1) {
+      return;
+    }
+  
+    var path;
+    if ($('#comment_path').val() === '') {
+      path = '/';
+    } else {
+      path = $('#comment_path').val();
+    }
+  
+    function loadComments () {
+      $btnLoad.hide();
+      $tipLoading.show();
+      $.ajax({
+        url: '/wangzhixuan/spring-shiro-training/comment_list',
+        data: {
+          page: page,
+          path: path
+        },
+        success: function(data) {
+          var err;
+          try {
+            $tipLoading.hide();
+            $btnLoad.show();
+            if (data.status !== 0) {
+              $btnLoad.text('无更多评论')
+              return $btnLoad.prop('disabled', true).addClass('disabled');
+            } else {
+              TreeComment.CommentListHandler(data);
+              page += 1;
+              if (data.comments_count < 10) {
+                $('#ajax_add_note_id').val('');
+                $btnLoad.text('无更多评论')
+                $btnLoad.prop('disabled', true).addClass('disabled');
+              }
+              // osctree can not load script
+              $comments.find('.timeago').timeago();
+              $comments.find('.commenter-role-label').popup();
+              noteAnchorLocater.setup();
+              toMathMlCode('', 'comments');
+              return $('.markdown-body pre code').each(function(i, block) {
+                return hljs.highlightBlock(block);
+              });
+            }
+          } catch (error) {
+            err = error;
+            return console.log('loadComments error:' + err);
+          }
+        }
+      });
+    };
+  
+  
+    function checkLoad () {
+      var listTop, top;
+      top = $(window).scrollTop();
+      listTop = $container.offset().top;
+      if (listTop >= top && listTop < top + $(window).height()) {
+        $(window).off('scroll', checkLoad);
+        return loadComments();
+      }
+    };
+  
+    $btnLoad.on('click', loadComments);
+    loadComments()
+  
+    try {
+      this.noteAnchorLocater.init({
+        lastAnchorElm: '#tree_comm_title'
+      });
+    } catch (error) {
+      console.log('noteAnchorLocater err:' + error);
+    }
+  })();
+</script>
+
+</div>
+<div class='inner-comment-box' id='comment-box'>
+<p>
+你可以在<a href="/login">登录</a>后，发表评论
+</p>
+
+</div>
+
+<script>
+  "use strict";
+  $('#checked_comments_with_star').checkbox('set unchecked')
+</script>
+
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      Tree.init();
+      return TreeCommentActions.init();
+    });
+  
+  }).call(this);
+</script>
+
+<script>
+  (function() {
+    var donateModal;
+  
+    Gitee.modalHelper = new GiteeModalHelper({
+      alertText: '提示',
+      okText: '确定'
+    });
+  
+    donateModal = new ProjectDonateModal({
+      el: '#project-donate-modal',
+      alipayUrl: '/wangzhixuan/spring-shiro-training/alipay',
+      wepayUrl: '/wangzhixuan/spring-shiro-training/wepay',
+      modalHelper: Gitee.modalHelper
+    });
+  
+    if ("" === 'true') {
+      donateModal.show();
+    }
+  
+    $('#project-donate').on('click', function() {
+      return donateModal.show();
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Tree.initHighlightTheme('white')
+</script>
+
+<script>
+  $(function() {
+    GitLab.GfmAutoComplete.dataSource = "/wangzhixuan/spring-shiro-training/autocomplete_sources"
+    GitLab.GfmAutoComplete.Emoji.assetBase = 'https://assets.gitee.com/assets/emoji'
+    GitLab.GfmAutoComplete.setup();
+  });
+</script>
+
+<footer id='git-footer-main'>
+<div class='ui container'>
+<div class='ui two column grid'>
+<div class='column'>
+<p><a href="https://gitee.com/" target="_blank">© Gitee.com  </a></p>
+<div class='ui three column grid' id='footer-left'>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a href="/about_us" class="item">关于我们</a>
+</div>
+<div class='item'>
+<a href="/terms" class="item">使用条款</a>
+</div>
+<div class='item'>
+<a href="/oschina/git-osc/issues" class="item">意见建议</a>
+</div>
+<div class='item'>
+<a href="/links.html" class="item">合作伙伴</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a href="/api/v5/swagger" class="item">OpenAPI</a>
+</div>
+<div class='item'>
+<a href="/all-about-git" class="item">Git 大全</a>
+</div>
+<div class='item'>
+<a href="https://gitee.com/help" class="item">帮助文档</a>
+</div>
+<div class='item'>
+<a href="/appclient" class="item">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class='column'>
+<div class='ui link list'>
+<div class='item'>
+<a href="https://gitee.com/git-osc/" class="item">更新日志</a>
+</div>
+<div class='item'>
+<a href="/gists" class="item">代码片段</a>
+</div>
+<div class='item'>
+<a href="/gitee-stars" class="item">码云封面人物</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='column right aligned followus'>
+<div class='qrcode weixin'>
+<img alt="Qrcode-weixin" src="https://assets.gitee.com/assets/qrcode-weixin-8ab7378f5545710bdb3ad5c9d17fedfe.jpg" />
+<p class='weixin-text'>微信服务号</p>
+</div>
+<div class='phone-and-qq column'>
+<div class='ui list official-support-container'>
+<div class='item'>
+<a href="//shang.qq.com/wpa/qunwpa?idkey=0d6c2fc0b5b71ac33405dd575bb490bf1a50e3c9a9f694e8a689cb59ee7dacc3" class="icon-popup" title="点击加入码云官方三群"><i class='iconfont icon-logo-qq'></i>
+<span>
+官方技术支持QQ群：655903986
+</span>
+</a></div>
+<div class='item mail-and-zhihu'>
+<a href="mailto: git@oschina.cn"><i class='iconfont icon-ic-mail'></i>
+<span id='git-footer-email'>
+git#oschina.cn
+</span>
+</a><a href="https://www.zhihu.com/org/ma-yun-osc/ " target="_blank"><i class='iconfont icon-zhihu'></i>
+<span>
+码云Gitee
+</span>
+</a></div>
+<div class='item'>
+企业版售前及售后使用咨询：400-606-0201
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottombar'>
+<div class='ui container'>
+<div class='ui grid'>
+<div class='five wide column partner'>
+本站带宽由 <a href="https://www.anchnet.com/" target="_blank" title="anchnet"><img alt="51idc" src="/51idc.png" /></a> 提供
+</div>
+<div class='eleven wide column right aligned'>
+<div class='copyright'>
+<a href="http://www.miitbeian.gov.cn/">粤ICP备12009483号-8</a>
+深圳市奥思网络科技有限公司版权所有
+</div>
+<i class='icon world'></i>
+<a href="/language/zh-CN">简 体
+</a>/
+<a href="/language/zh-TW">繁 體
+</a>/
+<a href="/language/en">English
+</a></div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  Gitee.initFooter()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+</script>
+
+
+<div class='side-toolbar'>
+<div class='button toolbar-help'>
+<i class='iconfont icon-help'></i>
+</div>
+<div class='toolbar-help-dialog'>
+<div class='toolbar-dialog-header'>
+<h3 class='toolbar-dialog-title'>搜索帮助</h3>
+<form accept-charset="UTF-8" action="/help/load_keywords_data" class="toolbar-help-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon input fluid toolbar-help-search'>
+<input name='keywords' placeholder='请输入产品名称或问题' type='text'>
+<i class='icon search'></i>
+</div>
+</form>
+
+<i class='iconfont icon-close toolbar-dialog-close-icon'></i>
+</div>
+<div class='toolbar-dialog-content'>
+<div class='toolbar-help-hot-search'>
+<div class='toolbar-list'>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4104">Git 是什么</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4114">Git 仓库的基本操作</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4166">企业版和个人版功能对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4167">企业版和个人版服务对比</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class='toolbar-list-item'>
+<a href="/help/articles/4202">在小程序Web开发工具中使用Git做版本管理</a>
+</div>
+</div>
+</div>
+<div class='toolbar-help-search-reseult'>
+<div class='toolbar-help-flex-column'>
+<div class='ui centered inline loader toolbar-help-loader'></div>
+<div class='toolbar-list'></div>
+<div class='toolbar-help-link-to-help'>
+<a href="" target="_blank">查看更多搜索结果</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='button share-link'>
+<i class='iconfont icon-share'></i>
+</div>
+<div class='ui popup'>
+<div class='header'>
+分享到
+</div>
+<div class='bdsharebuttonbox'>
+<a class='item bds_weixin' data-cmd='weixin' title='分享到微信'>weixin</a>
+<a class='item bds_tsina' data-cmd='tsina' title='分享到新浪微博'>sina</a>
+<a class='item bds_sqq' data-cmd='sqq' title='分享到QQ好友'>qq</a>
+<a class='item bds_qzone' data-cmd='qzone' title='分享到QQ空间'>qzone</a>
+</div>
+</div>
+<div class='popup button' data-content='评论' id='home-comment'>
+<i class='iconfont icon-comment'></i>
+</div>
+<div class='button gotop popup' data-content='回到顶部' id='gotop'>
+<i class='iconfont icon-top'></i>
+</div>
+</div>
+<script>
+  Gitee.initSideToolbar({
+    hasComment: true,
+    commentUrl: '/wangzhixuan/spring-shiro-training#tree_comm_title'
+  })
+</script>
+<script>
+  window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"分享到新浪微博","bdMini":"1","bdMiniList":["bdxc","tqf","douban","bdhome","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};
+</script>
+<script src="/bd_share/static/api/js/share.js" type="text/javascript"></script>
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+<script defer src='//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926' type='text/javascript'></script>
+
+</body>
+</html>

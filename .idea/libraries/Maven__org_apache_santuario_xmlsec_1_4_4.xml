@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/santuario/xmlsec/1.4.4/xmlsec-1.4.4-sources.jar!/" />
+      <root url="file://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/classes" />
     </SOURCES>
   </library>
 </component>

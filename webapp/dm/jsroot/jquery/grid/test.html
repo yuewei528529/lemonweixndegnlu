@@ -1,0 +1,180 @@
+<html>
+<head>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="jquery.ingrid-0.9.2.js"></script>
+<link rel="stylesheet" href="ingrid.css" type="text/css" media="screen" />
+</head>
+<body>
+<table id="table1">
+ <thead>
+  <tr>
+   <th>Col 1a</th>
+   <th>Col 1a</th>
+   <th>Col 1a</th>
+   <th>Col 1a</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td colspan=2>static col 2</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 3</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 4</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td id="sc5" ondblclick="alert(this.innerHTML);">static col 5</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 6</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 7</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 8</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+  <tr>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+   <td>static col 1</td>
+  </tr>
+ </tbody>
+</table>
+<script type="text/javascript">
+function initGrid() {
+	$("#table1").ingrid({ 
+		url: 'remote.html',
+		height: 600,
+		sortedCol:1
+	});
+}
+initGrid();
+</script>
+</body>
+</html>

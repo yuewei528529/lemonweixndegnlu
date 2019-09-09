@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body{padding:8px}
+
+/*修改表格悬停默认颜色*/
+table tr:hover > td,
+table tr:hover > th {
+    background-color: yellow;
+}
+ 

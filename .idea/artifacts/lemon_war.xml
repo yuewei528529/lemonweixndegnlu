@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="lemon-1.10.0.war">
+    <root id="archive" name="pinggao-1.0.war">
       <element id="artifact" artifact-name="lemon:war exploded" />
     </root>
   </artifact>
