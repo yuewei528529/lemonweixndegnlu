@@ -8,13 +8,13 @@
   <description>Lemon is an OA.</description>
   
   <inceptionYear>2019</inceptionYear>
-  <repositories>
+<!--  <repositories>
     <repository>
       <id>alimaven</id>
       <name>aliyun maven</name>
       <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
     </repository>
-  </repositories>
+  </repositories>-->
 
   <licenses>
     <license>
@@ -248,14 +248,28 @@
     <dependency>
       <groupId>org.springframework.data</groupId>
       <artifactId>spring-data-jpa</artifactId>
-      <version>2.1.0.RELEASE</version>
+      <version>1.6.1.RELEASE</version>
     </dependency>
-      <dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>5.0.12.Final</version>
+    </dependency>
+
+    <dependency>
           <groupId>org.jsoup</groupId>
           <artifactId>jsoup</artifactId>
           <version>1.11.3</version>
           <scope>test</scope>
       </dependency>
+
+
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+    </dependency>
+
 
   </dependencies>
 
@@ -1406,7 +1420,7 @@
     <jsp.version>2.1</jsp.version>
     <jetty.version>7.6.16.v20140903</jetty.version>
 
-    <spring.version>4.0.9.RELEASE</spring.version>
+    <spring.version>4.3.2.RELEASE</spring.version>
     <!--
     <struts2.version>2.3.24</struts2.version>
     -->

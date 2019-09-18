@@ -6,7 +6,7 @@
     </config>
     <config>
       <name>license</name>
-      <value>runqianWindowServer.lic</value>
+      <value>/runqianWindowServer.lic</value>
     </config>
     <config>
       <name>reportFileHome</name>
@@ -22,7 +22,7 @@
     </config>
     <config>
       <name>dataSource</name>
-      <value></value>
+      <value>jdbc/oa,mysql,GBK;</value>
     </config>
 	<config>
       <name>jspCharset</name>

@@ -156,6 +156,7 @@
             url: "http://localhost:8083/lemon_war_exploded/zijin/xmjc",
             type: "get",
             success: function (data) {
+                alert(44444444444);
                 $("input[name='hetongje']").attr("readonly","readonly");
                 $("input[name='yifu']").attr("readonly","readonly");
                 $("input[name='yifubl']").attr("readonly","readonly");
@@ -176,21 +177,21 @@
 
                     }*/
                 var nameOpt = "<option value='' selected='selected'>--请选择--</option>";
-                for (var i = 0; i < data.length; i++) {
+                for (var i = 0; i < data.rows.length; i++) {
 
-                    nameOpt += "<option value='" + data[i].xmjc + "' >" + data[i].xmjc + "</option>"
+                    nameOpt += "<option value='" + data.rows[i].xmjc + "' >" + data.rows[i].xmjc + "</option>"
 
                 }
                 var nameOpt1 = "<option value='' selected='selected'>--请选择--</option>";
-                for (var i = 0; i < data.length; i++) {
+                for (var i = 0; i < data.rows.length; i++) {
 
-                    nameOpt1 += "<option value='" + data[i].gys + "' >" + data[i].gys + "</option>"
+                    nameOpt1 += "<option value='" + data.rows[i].gys + "' >" + data.rows[i].gys + "</option>"
 
                 }
                 $("select[name='xmjl']").html(nameOpt);
 
             },
-            error: function () {
+            error: function () {alert(3333333333333)
             }
         });
         $(function () {

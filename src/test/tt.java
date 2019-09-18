@@ -1,3 +1,4 @@
+import com.mossle.dengluuser.service.dengluservice;
 import com.mossle.xiangmu.persistence.domain.kemu;
 import com.mossle.xiangmu.persistence.manager.kemuManager;
 import org.junit.Test;
@@ -17,19 +18,22 @@ import java.util.List;
 public class tt {
 
     @Resource
-
+    private dengluservice bb;
     private static  kemuManager vv;
     private static String vvvv="ddddd";
 
     @Test
     public  void dd() {
-        HashMap hMap = new HashMap();
+        bb.findbyopenid("o9RBa1P5O0lZqTgvprTCrPiiakpk").setcode("ccc");
+
+
+      /*  HashMap hMap = new HashMap();
         List<Object> list1 = new ArrayList<>();
         List<Object> list = new ArrayList<>();
         list1.add("ccccc");
         list1.add("gh");
         list1.add(vvvv);
-        hMap.put("ad","");
+        hMap.put("ad","");*/
       //  vv.findByIds("jj");
       /*  list.add( vv.find(
                 "from kemu where id like ? and xmjl like ?", "%%"

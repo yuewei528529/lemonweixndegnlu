@@ -5,7 +5,9 @@
              xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
              http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
+	<http security="none" pattern="/login11/**"/>
     <http security="none" pattern="/s/**"/>
+	<http security="none" pattern="/reportServlet/**"/>
     <http security="none" pattern="/cdn/**"/>
 	<http security="none" pattern="/favicon.ico"/>
 	<http security="none" pattern="/**/*.js"/>
