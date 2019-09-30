@@ -156,7 +156,7 @@
             url: "http://localhost:8083/lemon_war_exploded/zijin/xmjc",
             type: "get",
             success: function (data) {
-                alert(44444444444);
+              //  alert(44444444444);
                 $("input[name='hetongje']").attr("readonly","readonly");
                 $("input[name='yifu']").attr("readonly","readonly");
                 $("input[name='yifubl']").attr("readonly","readonly");

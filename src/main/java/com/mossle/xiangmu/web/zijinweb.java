@@ -2,6 +2,7 @@ package com.mossle.xiangmu.web;
 
 import com.mossle.xiangmu.persistence.manager.kemuManager;
 import com.mossle.xiangmu.persistence.manager.zijinmanager;
+import com.mossle.xiangmu.persistence.manager.zijinsqmanager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +20,8 @@ public class zijinweb {
 
     @Autowired
     private kemuManager cc;
+    @Autowired
+    private zijinsqmanager dd;
     private static List ccc;
 
     @RequestMapping("xmjc")
@@ -32,6 +35,20 @@ public class zijinweb {
         //return cc.find("  from kemu group by xmjc");
         resultMap.put("rows", cc.find(
                 "  from kemu group by xmjc"));
+
+        return resultMap;
+    }
+    @RequestMapping("zjsq")
+    @ResponseBody
+    public Object zjsq() {
+        Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("records", "1000000");
+        resultMap.put("page", "6");
+        resultMap.put("total", "6");
+
+        //return cc.find("  from kemu group by xmjc");
+        resultMap.put("rows", dd.find(
+                "  from zijinsq group by EXECUTION_ID_"));
 
         return resultMap;
     }
@@ -51,4 +68,7 @@ public class zijinweb {
                 "  from kemu where xmjc = ? and gys = ?", xmjc, gys);
 
     }
+
+
+
 }

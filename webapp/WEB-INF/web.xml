@@ -8,7 +8,19 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath*:spring/ctx*.xml</param-value>
     </context-param>
+    <servlet>
+        <servlet-name>reportServlet</servlet-name>
+        <servlet-class>com.runqian.report4.view.ReportServlet</servlet-class>
+        <init-param>
+            <param-name>configFile</param-name>
+            <param-value>/WEB-INF/reportConfig.xml</param-value>
+        </init-param>
 
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reportServlet</servlet-name>
+        <url-pattern>/reportServlet</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>compositeFilter</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
@@ -50,19 +62,7 @@
         <exception-type>java.lang.Throwable</exception-type>
         <location>/common/500.jsp</location>
     </error-page>
-    <servlet>
-        <servlet-name>reportServlet</servlet-name>
-        <servlet-class>com.runqian.report4.view.ReportServlet</servlet-class>
-        <init-param>
-            <param-name>configFile</param-name>
-            <param-value>/WEB-INF/reportConfig.xml</param-value>
-        </init-param>
-        <load-on-startup>2</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>reportServlet</servlet-name>
-        <url-pattern>/reportServlet</url-pattern>
-    </servlet-mapping>
+
     <jsp-config>
         <taglib>
             <taglib-uri>/WEB-INF/runqianReport4.tld</taglib-uri>
