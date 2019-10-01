@@ -8,7 +8,7 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<!-- 扫描除了Controller以外的注解 -->
-	<context:component-scan base-package="org.activiti.engine.runtime,com,org.activiti.rest.editor,org.activiti.rest.service">
+	<context:component-scan base-package="org.activiti.engine.runtime,com.mossle,com.tmy,org.activiti.rest.editor,org.activiti.rest.service">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 	

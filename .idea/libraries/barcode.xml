@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="barcode">
+    <CLASSES>
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/barcode.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/batik.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/dm_report.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/ess_es_server.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/ess_japi.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/excel2007.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/geronimo-stax-api_1.0_spec-1.0.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/icu4j_3_4_5.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/itext2_rq.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/jai_codec.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/jai_core.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/jdom.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/js.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/log4j_128.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/numformat.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/ooxml-schemas-1.0.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/parser.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/pdfbox_073.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/poi-3.6-20091214.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/poi-ooxml-3.6-20091214.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/poi2.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/qrcode.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/Qrcode_swetake.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/report4.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/webutil.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/xalan-2.6.0.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/xerces_2_5_0.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/xml-apis-ext.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/xml-apis.jar!/" />
+      <root url="jar://C:/Program Files (x86)/reportHome/webapps/demo/WEB-INF/lib/xmlbeans-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

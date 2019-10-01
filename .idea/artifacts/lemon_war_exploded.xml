@@ -100,7 +100,8 @@
           <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
           <element id="library" level="project" name="Maven: org.hsqldb:hsqldb:2.3.3" />
           <element id="library" level="project" name="Maven: org.lazyluke:log4jdbc-remix:0.2.7" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.37" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.15" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
           <element id="library" level="project" name="Maven: org.flywaydb:flyway-core:3.2.1" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:3.2.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:3.2.8.RELEASE" />

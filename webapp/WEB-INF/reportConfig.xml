@@ -22,7 +22,7 @@
     </config>
     <config>
       <name>dataSource</name>
-      <value>jdbc/oa,mysql,GBK;</value>
+      <value>cc,mysql,GBK;</value>
     </config>
 	<config>
       <name>jspCharset</name>
