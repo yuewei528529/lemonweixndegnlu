@@ -10,30 +10,30 @@
 	<script type="text/javascript" src="/lemon_war_exploded/cdn/static/js/jquery-3.3.1.min.js"></script>
 
 	<!-- 引入bootstrap 3.0-->
-	<script src="/lemon_war_exploded/cdn/static/bootstrap-table/popper.min.js"></script><!-- 配合bootstrap-table下拉框等使用，必须放到bootstrap前面不然报错 -->
-	<script type="text/javascript" src="/lemon_war_exploded/cdn/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
-	<link href="/lemon_war_exploded/cdn/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="/pinggao-1.0/cdn/static/bootstrap-table/popper.min.js"></script><!-- 配合bootstrap-table下拉框等使用，必须放到bootstrap前面不然报错 -->
+	<script type="text/javascript" src="/pinggao-1.0/cdn/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+	<link href="/pinggao-1.0/cdn/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<!--自制js工具类  -->
-	<script type="text/javascript" src="/lemon_war_exploded/cdn/static/js/jsUtil.js"></script>
+	<script type="text/javascript" src="/pinggao-1.0/cdn/static/js/jsUtil.js"></script>
 
-	<script type="text/javascript" src="/lemon_war_exploded/cdn/public/static/bootstrap-table/jquery.dropdown.min.css"></script>
+	<script type="text/javascript" src="/pinggao-1.0/cdn/public/static/bootstrap-table/jquery.dropdown.min.css"></script>
  
 <!--bootstrap-table  -->
-<link href="/lemon_war_exploded/cdn/static/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
-<script type="text/javascript" src="/lemon_war_exploded/cdn/static/bootstrap-table/bootstrap-table.min.js"></script>
-<script type="text/javascript" src="/lemon_war_exploded/cdn/static/bootstrap-table/bootstrap-table-zh-CN.min.js"></script><!--汉化文件，放在 bootstrap-table.js 后面 -->
+<link href="/pinggao-1.0/cdn/static/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<script type="text/javascript" src="/pinggao-1.0/cdn/static/bootstrap-table/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="/pinggao-1.0/cdn/static/bootstrap-table/bootstrap-table-zh-CN.min.js"></script><!--汉化文件，放在 bootstrap-table.js 后面 -->
 <!-- bootstrap-table-export数据导出 -->
-<script type="text/javascript" src="/lemon_war_exploded/cdn/static/bootstrap-table/bootstrap-table-export.min.js"></script>
-<script type="text/javascript" src="/lemon_war_exploded/cdn/static/bootstrap-table/tableExport.js"></script>
-<%-- <script type="text/javascript" src="/lemon_war_exploded/cdn/static/bootstrap-table/tableExport.js"></script>   --%>
+<script type="text/javascript" src="/pinggao-1.0/cdn/static/bootstrap-table/bootstrap-table-export.min.js"></script>
+<script type="text/javascript" src="/pinggao-1.0/cdn/static/bootstrap-table/tableExport.js"></script>
+<%-- <script type="text/javascript" src="/pinggao-1.0/cdn/static/bootstrap-table/tableExport.js"></script>   --%>
  
 <!--jeDate日期选择jquery插件
 	1、使用：共4步,第一步：加载jedate.js核心文件，第二步：加载jedate.css样式，第三步，jquery中加载jeDate，第四步：html中使用jeDate  
 	2：注意：一个input日期，就需要在function中添加一个js加载设置
 -->
-<script type="text/javascript" src="/lemon_war_exploded/cdn/static/js/JQuery_plugs/jeDate/src/jedate.js"></script><!-- jeDate:1/4 -->
-<link href="/lemon_war_exploded/cdnstatic/js/JQuery_plugs/jeDate/skin/jedate.css" rel="stylesheet"><!-- jeDate:2/4 -->
+<script type="text/javascript" src="/pinggao-1.0/cdn/static/js/JQuery_plugs/jeDate/src/jedate.js"></script><!-- jeDate:1/4 -->
+<link href="/pinggao-1.0/cdnstatic/js/JQuery_plugs/jeDate/skin/jedate.css" rel="stylesheet"><!-- jeDate:2/4 -->
  
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -477,7 +477,7 @@ function _bootstrap_table(_pageNum){
 	_table.bootstrapTable({
 		sidePagination: "server",   //分页方式：client客户端分页，server服务端分页（*）
 		method: 'get',
-		url: "/lemon_war_exploded/zijin/zjsq",//这个接口需要处理bootstrap table传递的固定参数
+		url: "/lemon_war_exploded/zijin/xmjc",//这个接口需要处理bootstrap table传递的固定参数
 		striped: true,      //是否显示行间隔色
 		cache: false,      //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）	设置为 false 禁用 AJAX 数据缓存。
 		
@@ -557,47 +557,146 @@ function _bootstrap_table(_pageNum){
 			//一级表头（可不加）
 			[
                  {
-                   title: "资金需求统计表",
+                   title: "合同付款统计表",
                    halign:"center",
                    align:"center",
                    colspan: 20
                 }
             ],
             //二级表头（可不加）
+            [
+                 
+                 {
+                	  //field: 'name',
+                     title: "基础信息",
+                     valign:"middle",
+                     align:"center",
+                     colspan: 5,
+                     rowspan: 1
+                 },
+                 {
+                     title: "付款信息",
+                     align:"center",
+                     colspan: 10,
+                     rowspan: 1
+                 }
+             ],
              //数据字段
 			 [
 				// {checkbox: true, visible: true,valign:"center"}, //是否显示复选框  ，包括全选功能
 				 
-				 {field: 'riqi',title: '提交时间',align: 'center', sortable: true},
-				 {field: 'jinji',title: '紧急程度',align: 'center', sortable: true,
+				 {field: 'id',title: '序号',align: 'center', sortable: true},
+				 {field: 'xmjc',title: '项目名称',align: 'center', sortable: true,
 						//底部合计，需开启 showFooter: true,
 
 				 }
 
 				,
-				 {field: 'xmjl',title: '工程名称',align: 'center', sortable: true,//设置内容的水平和垂直位置
+				 {field: 'hetongbh',title: '合同编号',align: 'center', sortable: true,//设置内容的水平和垂直位置
 					
 				
 				 },
 				 
-				 {field: 'gys',title: '供应商名称',align: 'center', sortable: true,
+				 {field: 'shoukdanw',title: '供应商名称',align: 'center', sortable: true, 
 						//底部合计，需开启 showFooter: true,
 
 				 },
 				 
-				 {field: 'hetongje',title: '合同金额',align: 'center', sortable: true},
-				 {field: 'yifu',title: '已付金额',align: 'center', sortable: true},
-				 {field: 'yifubl',title: '已付比例',align: 'center', sortable: true},
-				 {field: 'shenqje',title: '申请金额',align: 'center', sortable: true },
-				 {field: 'shenqbl',title: '申请比例（万元）',align: 'center', sortable: true},
-				 {field: 'zhiftj',title: '支付条件',align: 'center', sortable: true},
-				 {field: 'shiyou',title: '事由',align: 'center', sortable: true},
-				 {field: 'fileupload',title: '相关依据',align: 'center', sortable: true,
-					 formatter:function(value,row,index){
+				 {field: 'yongtu',title: '货物名称',align: 'center', sortable: true},
+				 {field: 'danw',title: '单位',align: 'center', sortable: true},
+				 {field: 'shuliang',title: '数量',align: 'center', sortable: true,
+					 formatter:function(value,row,index){ 
+				    		
+							return parseFloat(Number(value).toFixed(6));
+						
+		            }, },
+				 {field: 'danjia',title: '单价（万元）',align: 'center', sortable: true,
+					 formatter:function(value,row,index){ 
+			    		
+						return parseFloat(Number(value).toFixed(6));
+					
+	            }, },
+				 {field: 'hetongjiner',title: '合同总金额（万元）',align: 'center', sortable: true,
+					 formatter:function(value,row,index){ 
+				    		
+							return parseFloat(Number(value).toFixed(6));
+						
+		            }, 
+					 footerFormatter: function (value) { 
+						 var count = 0;
+				        for (var i in value) { 
+				        	
+				        	
+               
+				        	count += value[i].hetongjiner*Math.pow(10,6); 
+				        	
+				        } 
+				        return "合同总额："+count/Math.pow(10,6);
+				    }
+				},
+				 {field: 'kaipjiner',title: '开票金额',align: 'center', sortable: true,
+					formatter:function(value,row,index){ 
+			    		
+						return parseFloat(Number(value).toFixed(6));
+					
+	            }, 
+					 footerFormatter: function (value) { var count = 0;
+				        for (var i in value) { 
+				        	if(!value[i].kaipjiner==null&&value[i].kaipjiner.indexOf(",")!=-1)
+				        	{
+				        		value[i].kaipjiner=value[i].kaipjiner.replace(/,/g, "");				        
+				        	}
+				        	
+				        	if(Number(value[i].kaipjiner)=="NaN"||value[i].kaipjiner==null){
+				        		value[i].kaipjiner=0;
+				        	}
+				        	count += Number(value[i].kaipjiner)*Math.pow(10,6); 
+				        } 
+				        return "开票总额："+count/Math.pow(10,6);
+				    }},
+				 {field: 'yifujiner',title: '已付金额',align: 'center', sortable: true,
+                     formatter:function(value,row,index){ 
+				    		
+							return parseFloat(Number(value).toFixed(6));
+						
+		            }, 
+						 footerFormatter: function (value) { var count = 0;
+					        for (var i in value) { 
+					        	if(Number(value[i].yifujiner)=="NaN")
+					        		value[i].yifujiner=0;
+					        	count += Number(value[i].yifujiner)*Math.pow(10,6);
+					        } 
+					        return "已付总额："+count/Math.pow(10,6);
+					    }
+				    },
+				 {field: 'yuer',title: '余额',align: 'center', sortable: true,
+ 				    	formatter:function(value,row,index){ 
+				    		
+							return parseFloat(Number(value).toFixed(6));
+						
+		            }, 
+						 footerFormatter: function (value) { var count = 0;
+					        for (var i in value) { 
+					        	if(Number(value[i].yuer)=="NaN")
+					        		value[i].yuer=0;					        	
+					        	count += Number(value[i].yuer)*Math.pow(10,6);
+					        } 
+					        return "余额总额："+count/Math.pow(10,6);
+					    }},
+					    
+				 {field: 'yifubili',title: '付款比例',align: 'center', sortable: true,
+					    	formatter:function(value,row,index){ 				            					            	
+									return (Number(value)*100).toFixed(2)+"%";
+								
+				            }
+                    },
+				 {field: 'sjjhq',title: '实际交货期',align: 'center', sortable: true},
+				 {field: 'danw',title: '单位',align: 'center', sortable: true},
+				 {field: 'shuliang',title: '数量',align: 'center', sortable: true},
+				 {field: 'danjia',title: '单价',align: 'center', sortable: true},
+				 {field: 'kaipjiner',title: '开票金额',align: 'center', sortable: true},
+				 {field: 'sjjhq',title: '实际交货期',align: 'center', sortable: true},
 
-						 return "<a href=\""+"http://localhost:8083/lemon_war_exploded/rs/store/view?model=form&key="+value+""+"\">下载</a>";
-
-					 }},
 				 {			field: 'operate',
 						title: '操作',
 						width: '80px',
@@ -693,7 +792,8 @@ window.operateEvents1 = {
 }
 	function operateFormatter(value, row, index) {
 		return [
-			'<button id="btn_detail" type="button" class="RoleOfedit btn btn-primary  btn-sm">打印</button>',
+			'<button id="btn_detail" type="button" class="RoleOfedit btn btn-primary  btn-sm">修改</button>',
+			'<button id="btn_detail1" type="button" class="RoleOfdelete btn btn-danger  btn-sm">删除</button>',
 		].join('');
 	}
 
