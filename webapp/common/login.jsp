@@ -30,7 +30,7 @@ function focusUsername() {
 	</script>
   </head>
 
-  <body>
+  <body>--%>
 
     <!-- start of header bar -->
 <div class="navbar navbar-default navbar-fixed-top">
@@ -136,4 +136,46 @@ function focusUsername() {
     </div>
 
   </body>
+  <script type="text/javascript">
+      var curWwwPath=window.document.location.href;
+
+      //获取主机地址之后的目录如：/Tmall/index.jsp
+      var pathName=window.document.location.pathname;
+      var pos=curWwwPath.indexOf(pathName);
+
+      //获取主机地址，如：//localhost:8080
+      var localhostPaht=curWwwPath.substring(0,pos);
+
+      //获取带"/"的项目名，如：/Tmall
+      var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+      var xmm=localhostPaht+projectName;
+   $(function () {
+
+          $.ajax({
+              url: xmm + "/chazhao",
+              type: "get",
+              data: {code:curWwwPath.substring(curWwwPath.indexOf("code")+5,curWwwPath.length)},
+              error: function ( ) {
+
+                  window.location.href="www.pgepc.cn";
+
+              },
+              success: function (data) {
+           if(data.length>29){
+               window.document.href="www.pgepc.cn";
+           }
+
+           else{
+               $("#username").val(data);
+               $("#password").val("321");
+               $("input[name='submit']").click();
+           }
+
+
+              },
+
+          })
+
+      })
+  </script>
 </html>

@@ -6,6 +6,8 @@
              http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
 	<http security="none" pattern="/login11/**"/>
+	<http security="none" pattern="/register/**"/>
+	<http security="none" pattern="/chazhao/**"/>
     <http security="none" pattern="/s/**"/>
 	<http security="none" pattern="/reportServlet/**"/>
     <http security="none" pattern="/cdn/**"/>

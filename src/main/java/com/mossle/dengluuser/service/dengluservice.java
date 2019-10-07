@@ -25,16 +25,16 @@ public class dengluservice {
         return denglumanager.findUniqueBy("openid", cc);
     }
 
-    public void setcode(denglu cc){
-
+   /*public void setcode(String cc){
+       denglumanager.findUniqueBy("openid", cc).setcode(cc);
         denglu cc1= (denglu) denglumanager.getSession().get(denglu.class,"1");
         cc1.setcode(cc.getcode());
-        denglumanager.getSession().update(cc1);
+        denglumanager.
 
         denglumanager.getSession().beginTransaction().commit();
 
 
-    }
+    }*/
     public void del(denglu cc){
         denglumanager.remove(cc);
     }
