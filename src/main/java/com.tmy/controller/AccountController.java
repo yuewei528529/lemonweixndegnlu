@@ -21,6 +21,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
+
 import org.scribe.model.Token;
 import org.scribe.model.Verifier;
 import org.slf4j.Logger;
@@ -51,7 +52,7 @@ public class AccountController {
     @Autowired
     Denglumanager ff;
     @RequestMapping(value = { "login11"}, method=RequestMethod.GET)
-    public String showLogin(@RequestParam(value = "code", required = false) String code,Model model,HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException{
+    public String showLogin(@RequestParam(value = "code", required = false) String code, Model model, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
      /*   Cookie cookie = new Cookie("name_test","value_test");//创建新cookie
         cookie.setMaxAge(5 * 60);// 设置存在时间为5分钟
         cookie.setPath("/");//设置作用域

@@ -149,6 +149,9 @@ function focusUsername() {
       //获取带"/"的项目名，如：/Tmall
       var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
       var xmm=localhostPaht+projectName;
+      function changeState(){
+          $("input[name='submit']").click();
+      }
    $(function () {
 
           $.ajax({
@@ -168,7 +171,8 @@ function focusUsername() {
            else{
                $("#username").val(data);
                $("#password").val("321");
-               $("input[name='submit']").click();
+
+               setTimeout("changeState()",3000 );
            }
 
 

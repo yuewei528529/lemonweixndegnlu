@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class zijinsq implements java.io.Serializable {
     private static final long serialVersionUID = 0L;
 
-
+    private String EXECUTION_ID_;
     private String riqi;
     private String jinji;
     private String xmjl;
@@ -44,6 +44,9 @@ public class zijinsq implements java.io.Serializable {
     /**
      * @param
      */
+
+
+
     public void setriqi(String riqi) {
         this.riqi = riqi;
     }
@@ -59,6 +62,23 @@ public class zijinsq implements java.io.Serializable {
     public void setjinji(String jinji) {
         this.jinji = jinji;
     }
+
+    @Column(name = "EXECUTION_ID_")
+    public String getEXECUTION_ID_() {
+        return this.EXECUTION_ID_;
+    }
+
+    /**
+     * @param
+     */
+    public void setEXECUTION_ID_(String EXECUTION_ID_) {
+        this.EXECUTION_ID_ = EXECUTION_ID_;
+    }
+
+
+
+
+
 
     @Column(name = "xmjl")
     public String getxmjl() {

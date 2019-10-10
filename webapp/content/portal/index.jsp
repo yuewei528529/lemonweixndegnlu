@@ -17,8 +17,8 @@
   </head>
 
   <body>
- <%--<script type="text/javascript">
-      window.location.href="http://localhost:8081/lemon_war_exploded/bpm/workspace-home.do";
+<%-- <script type="text/javascript">
+      window.location.href="http://www.pgepc.cn/pinggao-1.0/cdn/cdn/layuiAdmin.std-v1.2.1/src/views/index.html";
   </script>--%>
   <%@include file="/header/portal.jsp"%>
     <div data-height="300" class="container-fluid dashboard dashboard-draggable" id="dashboard" style="margin-top:70px;">
