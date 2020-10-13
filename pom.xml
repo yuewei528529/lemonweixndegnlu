@@ -1408,7 +1408,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <tagBase>svn://localhost/mossle/tags</tagBase>
 
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
     <mockito.version>1.10.19</mockito.version>
     <selenium2.version>2.48.2</selenium2.version>
     <xml-apis.version>1.4.01</xml-apis.version>
