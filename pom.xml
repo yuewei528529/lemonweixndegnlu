@@ -1425,7 +1425,7 @@
     <struts2.version>2.3.24</struts2.version>
     -->
     <spring-security.version>3.2.8.RELEASE</spring-security.version>
-    <hibernate.version>4.3.11.Final</hibernate.version>
+    <hibernate.version>5.4.24.Final</hibernate.version>
     <hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
     <javassist.version>3.20.0-GA</javassist.version>
     <ehcache.version>2.10.1</ehcache.version>
