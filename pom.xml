@@ -1473,7 +1473,7 @@
     <pinyin4j.version>2.5.0</pinyin4j.version>
     <felix.version>5.4.0</felix.version>
     <spring-ldap.version>2.0.4.RELEASE</spring-ldap.version>
-    <mina.version>2.0.9</mina.version>
+    <mina.version>2.0.22</mina.version>
     <ical4j.version>1.0.6</ical4j.version>
     <jsr107.version>1.0.0</jsr107.version>
 
